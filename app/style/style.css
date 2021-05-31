@@ -314,7 +314,7 @@ a {
 /**********SECTOIN-3 START**************/
 
 .section-3 {
-    margin-top: 50px;
+    margin-top: 30px;
     text-align: center;
 }
 
@@ -650,7 +650,7 @@ a:focus {
 /**********SECTOIN-6 START**************/
 
 .section-6 h2 {
-    margin-top: 50px;
+    margin-top: 20px;
     text-align: center;
 }
 
@@ -729,6 +729,7 @@ a:focus {
     }
     .section-7 img {
         width: 200px;
+        margin: 20px auto;
     }
     .section-7 button {
         margin: 10px auto;
@@ -774,10 +775,6 @@ a:focus {
 
 
 /**********SECTOIN-9 START**************/
-
-.section-9 {
-    margin-top: 50px;
-}
 
 .desktop {
     width: 350px;
@@ -832,3 +829,11 @@ a:focus {
 
 
 /**********SECTOIN-10 END**************/
+
+.footer-list ul li a {
+    color: #333c43;
+}
+
+.footer-list h3 {
+    margin-left: 15px;
+}
