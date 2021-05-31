@@ -849,6 +849,12 @@ a:focus {
     margin: 50px auto;
 }
 
-.socail-icons ul {
-    background-color: #f85018;
+.socail-icons ul li {
+    display: inline-flex;
+    font-size: 40px;
+    padding: 0px 10px;
+}
+
+.fa-facebook {
+    padding-top: 15px;
 }
