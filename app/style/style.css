@@ -812,8 +812,12 @@ a:focus {
     padding: 20px 0px;
 }
 
-.email {
-    width: 600px;
+.section-10 input {
+    width: 300px;
+    margin: 20px auto;
+}
+
+.section-10 p {
     margin: 10px auto;
 }
 
@@ -821,9 +825,12 @@ a:focus {
     .section-10 {
         margin: 20px auto;
     }
-    .email {
+    .section-10 input {
+        display: none;
+    }
+    .section-10 button {
         width: 100%;
-        margin: 5px auto;
+        margin-top: 50px;
     }
 }
 
