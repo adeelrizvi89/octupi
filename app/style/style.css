@@ -509,7 +509,7 @@ a:focus {
     display: block;
     padding: 10px 30px 10px 60px;
     background: #314f6b;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
     color: #fff;
     overflow: hidden;
@@ -837,4 +837,10 @@ a:focus {
 .footer-list h3 {
     margin-left: 15px;
     font-size: 18px;
+}
+
+@media (max-width:920) {
+    .footer-item {
+        display: none;
+    }
 }
