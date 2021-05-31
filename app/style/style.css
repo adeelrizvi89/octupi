@@ -154,6 +154,10 @@ a {
     display: none;
 }
 
+.menu-btn {
+    margin-left: 100px;
+}
+
 .menu-list .cancel-btn {
     position: absolute;
     right: 30px;
@@ -846,15 +850,11 @@ a:focus {
 }
 
 .socail-icons {
-    margin: 50px auto;
+    margin-top: 50px;
 }
 
 .socail-icons ul li {
     display: inline-flex;
     font-size: 40px;
     padding: 0px 10px;
-}
-
-.fa-facebook {
-    padding-top: 15px;
 }
