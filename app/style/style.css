@@ -623,11 +623,23 @@ a:focus {
     margin: 0px 10px;
 }
 
+.crowd {
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+    align-items: center;
+}
+
+@media (max-width:1200px) {
+    .crowd {
+        border: none;
+    }
+}
+
 @media (max-width: 920px) {
     .capterra,
     .crowd,
     .software {
-        margin: 5px auto;
+        margin: 20px auto;
     }
 }
 
