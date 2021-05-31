@@ -271,25 +271,17 @@ a {
 
 /**********SECTOIN-2 START**************/
 
-.bg {
+.section-2 {
     background-color: #314f6b;
 }
 
-.section-2 {
-    background-color: #314f6b;
-    width: 100%;
-    margin: 20px auto;
+.test {
+    padding: 0px !important;
+    box-sizing: border-box;
 }
 
 .section-2 h3 {
-    color: white;
-}
-
-.section-2 ul li {
-    color: white;
-    font-size: 16px;
-    padding: 5px 0;
-    margin-left: -20px;
+    margin-left: 15px;
 }
 
 .fa-check {
@@ -297,12 +289,13 @@ a {
     color: white;
 }
 
+.checklist p {
+    color: #fff;
+    font-size: 15px;
+}
+
 @media (max-width:920) {
-    .section-2 {
-        display: block;
-        text-align: left;
-    }
-    .test {
+    .list-col {
         width: 100%;
     }
 }
