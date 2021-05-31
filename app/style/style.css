@@ -244,7 +244,7 @@ a {
 @media (max-width: 920px) {
     .section-1 {
         display: block;
-        margin: 10px auto;
+        margin: 5px auto;
         text-align: center;
     }
     .section-1 img {
@@ -836,4 +836,5 @@ a:focus {
 
 .footer-list h3 {
     margin-left: 15px;
+    font-size: 18px;
 }
