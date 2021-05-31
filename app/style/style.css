@@ -844,3 +844,11 @@ a:focus {
         display: none;
     }
 }
+
+.socail-icons {
+    margin: 50px auto;
+}
+
+.socail-icons ul {
+    background-color: #f85018;
+}
