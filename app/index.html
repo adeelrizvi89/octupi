@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -23,31 +24,51 @@
 
 <body>
     <!--NAVIGATION BAR START-->
-    <header>
-        <div class="container-fluid main-nav">
-            <div class="container">
-                <div class="row">
-                    <nav>
-                        <div class="logo">
-                            <a href="#"><img src="images/logo.png" alt="#" width="150px"></a>
-                        </div>
-                        <input type="checkbox" id="click">
-                        <label for="click" class="menu-btn"><i class="fas fa-bars"></i></label>
-                        <ul>
-                            <li><a href="#">Features</a></li>
-                            <li><a href="#">Pricing</a></li>
-                            <li><a href="#">Demo</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#" class="login">Login</a></li>
-                            <li><a href="#" class="signup">Sign up</a></li>
-                        </ul>
-                    </nav>
+    <nav class="navbar">
+        <div class="logo ">
+            <a href="#"><img src="images/logo.png" alt="#" width="150px"></a>
+        </div>
+        <div class="content d-flex justify-content-between align-items-center text-white">
+            <!--<div class="logo">
+                <a href="#"><img src="images/logo.png" alt="#" width="150px"></a>
+            </div>-->
+            <ul class="menu-list">
+                <div class="icon cancel-btn">
+                    <i class="fas fa-times text-white"></i>
                 </div>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="login">LOGIN</a></li>
+                <li><a href="#" class="sign-up">SIGN UP</a></li>
+            </ul>
+            <div class="icon menu-btn ml-100">
+                <i class="fas fa-bars text-white "></i>
             </div>
         </div>
-    </header>
+    </nav>
+    <div class="banner"></div>
+    <script>
+        const body = document.querySelector("body");
+        const navbar = document.querySelector(".navbar");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        menuBtn.onclick = () => {
+            navbar.classList.add("show");
+            menuBtn.classList.add("hide");
+            body.classList.add("disabled");
+        }
+        cancelBtn.onclick = () => {
+            body.classList.remove("disabled");
+            navbar.classList.remove("show");
+            menuBtn.classList.remove("hide");
+        }
+        window.onscroll = () => {
+            this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+        }
+    </script>
     <!--NAVIGATION BAR END-->
 
 
@@ -75,37 +96,37 @@
 
 
     <!--SECTION 2 START-->
+
+    <!--SECTION-2 END-->
     <div class="container-fluid">
         <div class="container">
             <div class="row section-2">
-                <div class="col">
+                <div class="col ">
                     <h3>Boost productivity by 30%</h3>
-                    <p><i class="fa fa-check" aria-hidden="true"></i> Make better decisions about your time;</p>
-                    <p><i class="fa fa-check" aria-hidden="true"></i> Identify your computer usage habits;</p>
-                    <p><i class="fa fa-check" aria-hidden="true"></i> Improve upon work plan & execution;</p>
-                    <p><i class="fa fa-check" aria-hidden="true"></i> See what’s causing constraints in your day;</p>
+                    <p><i class="fa fa-check" aria-hidden="true"></i>Make better decisions about your time; </p>
+                    <p><i class="fa fa-check" aria-hidden="true"></i>Identify your computer usage habits; </p>
+                    <p><i class="fa fa-check" aria-hidden="true"></i>Improve upon work plan & execution; </p>
+                    <p><i class="fa fa-check" aria-hidden="true"></i>See what’s causing constraints in your day; </p>
                 </div>
                 <div class="col">
                     <h3>Minimize business losses</h3>
-                    <p><i class="fa fa-check" aria-hidden="true"></i> Time dedicated to tasks and projects; </p>
-                    <p><i class="fa fa-check" aria-hidden="true"></i> Accurate insight to project resources; </p>
-                    <p><i class="fa fa-check" aria-hidden="true"></i> Make informed decisions on data; </p>
-                    <p><i class="fa fa-check" aria-hidden="true"></i> Suitably Invoice your clients; </p>
+                    <p><i class="fa fa-check" aria-hidden="true"></i>Time dedicated to tasks and projects; </p>
+                    <p><i class="fa fa-check" aria-hidden="true"></i>Accurate insight to project resources; </p>
+                    <p><i class="fa fa-check" aria-hidden="true"></i>Make informed decisions on data; </p>
+                    <p><i class="fa fa-check" aria-hidden="true"></i>Suitably Invoice your clients; </p>
                 </div>
                 <div class="col">
                     <h3>Be more organized</h3>
-                    <p><i class="fa fa-check" aria-hidden="true"></i> Keep track of processes and goals; </p>
-                    <p><i class="fa fa-check" aria-hidden="true"></i> Lead your team effectively; </p>
-                    <p><i class="fa fa-check" aria-hidden="true"></i> Set Automatic time & project tracking; </p>
-                    <p><i class="fa fa-check" aria-hidden="true"></i> Grasp shift and absence scheduling; </p>
+                    <p><i class="fa fa-check" aria-hidden="true"></i>Keep track of processes and goals; </p>
+                    <p><i class="fa fa-check" aria-hidden="true"></i>Lead your team effectively; </p>
+                    <p><i class="fa fa-check" aria-hidden="true"></i>Set Automatic time & project tracking; </p>
+                    <p><i class="fa fa-check" aria-hidden="true"></i>Grasp shift and absence scheduling; </p>
                 </div>
             </div>
         </div>
     </div>
-    <!--SECTION-2 END-->
 
-
-    <!--SECTION-3 START-->
+    <!-- SECTION-3 START-->
     <section>
         <div class="container">
             <div class="row section-3">
@@ -119,7 +140,7 @@
 
     <!--SECTION-4 START-->
     <section>
-        <div class="container">
+        <div class="container tab-panel">
             <div class="row">
                 <div class="col check">
                     <div class="panel with-nav-tabs panel-default panel">
@@ -203,6 +224,102 @@
             </div>
         </div>
     </section>
+    <section>
+        <div class="container panel-accordion">
+            <div class="row">
+                <div class="col">
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Teams
+                            </a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body">
+                                    <p>Teams Be more organized and aware of how your team is performing on an everyday basis with simple time tracking software. Plan and create
+                                        <a href="#" class="heighlight">shifts</a>, manage <a href="#" class="heighlight">absences</a>,<a href="#" class="heighlight">track your staff's productivity,</a> track your staff's productivity, use the
+                                        <a href="#" class="heighlight">Project tracking</a> feature to see who is working on what and for how long, and so much more.</p>
+                                    <img src="images/teams.png" alt="teams-img" width="100%" height="auto">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Businesses
+                            </a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body">
+                                    <p>Manage your company's human resources and cash flow from a single dashboard. Use the Octupi time tracking app to <a href="#" class="heighlight">track your team's productivity,</a> keep an eye on the outsourced staff
+                                        with
+                                        <a href="#" class="heighlight">Screenshots</a>, manage your <a href="#" class="heighlight">projects</a>, calculate <a href="#" class="heighlight">project costs</a>, create <a href="#" class="heighlight">invoices</a>,
+                                        and more.</p>
+                                    <img src="images/Businesses.png" alt="teams-img" width="100%" height="auto">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Enterprises
+                            </a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                    <p>Gain a complete overview of your business, employees, processes, and progress while enjoying VIP support and custom onboarding. Assign managers to track their teams, use the <a href="#" class="heighlight">Screenshots</a>feature
+                                        for employee accountability, <a href="#" class="heighlight">Shift scheduling</a> for managing different work hours, <a href="#" class="heighlight">projects</a> to keep track of expenses, and more.</p>
+                                    <img src="images/enterprises.png" alt="teams-img" width="100%" height="auto">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFour">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Agencies
+                            </a>
+                                </h4>
+                            </div>
+                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                <div class="panel-body">
+                                    <p>Keep an eye on your team members, remote workers, and freelancers in one place. <a href="#" class="heighlight">Track their time</a>, use <a href="#" class="heighlight">Screenshots</a> to ensure that everyone stays on
+                                        tasks, and calculate their pay with the <a href="#" class="heighlight">Cost calculation</a> feature. Boost workflow efficiency and meet your clients' deadlines every time.</p>
+                                    <img src="images/agencies.png" alt="teams-img" width="100%" height="auto">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFive">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Freelancers
+                            </a>
+                                </h4>
+                            </div>
+                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                                <div class="panel-body">
+                                    Never again get underpaid for the time invested in your clients' <a href="#" class="heighlight">projects</a>. Track time spent on specific projects, generate and <a href="#" class="heighlight">export timesheets</a>,
+                                    and send them to the client. Then, use the <a href="#" class="heighlight">Cost calculation</a> and <a href="#" class="heighlight">Invoicing</a> features to create and send out invoices.</p>
+                                    <img src="images/freelancers.png" alt="teams-img" width="100%" height="auto">
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!--SECTION-4 END-->
 
@@ -216,44 +333,47 @@
                         <p>Here are some of them</p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col brand-logos">
-                        <ul>
-                            <li>
-                                <a href="#"><img src="images/sixt.png" alt="Sixt-Logo" width=150px></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="images/mapon.png" alt="MApon-Logo" width="150px"></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="images/121.png" alt="121-Logo" width="150px"></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="images/map.png" alt="Map-Logo" width="150px"></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="images/truesix.png" alt="Truesix-Logo" width="150px"></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="images/montway.png" alt="Montway-Logo" width="150px"></a>
-                            </li>
-                        </ul>
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <a href="#"><img src="images/sixt.png" alt="Sixt-Logo" width=150px></a>
+
                     </div>
+                    <div class="col">
+                        <a href="#"><img src="images/mapon.png" alt="MApon-Logo" width="150px"></a>
+
+                    </div>
+                    <div class="col">
+                        <a href="#"><img src="images/121.png" alt="121-Logo" width="150px"></a>
+
+                    </div>
+                    <div class="col">
+                        <a href="#"><img src="images/map.png" alt="Map-Logo" width="150px"></a>
+
+                    </div>
+                    <div class="col">
+                        <a href="#"><img src="images/truesix.png" alt="Truesix-Logo" width="150px"></a>
+
+                    </div>
+                    <div class="col">
+                        <a href="#"><img src="images/montway.png" alt="Montway-Logo" width="150px"></a>
+
+                    </div>
+
                 </div>
-                <div class="row">
-                    <div class="col brand-logos2">
-                        <ul>
-                            <li>
-                                <a href="#"><img src="images/capterra.png" alt="capterra" width="250px"></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="images/crowd.png" alt="crowd" width="250px"></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="images/software.png" alt="software" width="250px"></a>
-                            </li>
-                        </ul>
+                <div class="row brand-logos2">
+                    <div class="col capterra">
+                        <a href="#"><img src="images/capterra.png" alt="capterra" width="300px"></a>
+
                     </div>
+                    <div class="col crowd">
+                        <a href="#"><img src="images/crowd.png" alt="crowd" width="300px"></a>
+
+                    </div>
+                    <div class="col software">
+                        <a href="#"><img src="images/software.png" alt="software" width="300px"></a>
+
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -459,7 +579,121 @@
     </section>
     <!--SECTION-10 END-->
 
+    <!--FOOTER START-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h3>Octupi</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Terms</a></li>
+                        <li>
+                            <a href="#">Privacy</a></li>
+                        <li>
+                            <a href="#">Cookies</a></li>
+                        <li>
+                            <a href="#">Affiliate terms</a></li>
+                        <li>
+                            <a href="#">Download app</a></li>
+                        <li>
+                            <a href="#">Pricing</a></li>
+                        <li>
+                            <a href="#">Affiliate</a></li>
+                        <li>
+                            <a href="#">Press</a></li>
+                        <li>
+                            <a href="#">DeskTime in your language</a></li>
 
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Learn more</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Employee time tracking</a></li>
+                        <li>
+                            <a href="#">Online employee time clock</a></li>
+                        <li>
+                            <a href="#">Best time tracking apps</a></li>
+                        <li>
+                            <a href="#">DeskTime for Business</a></li>
+                        <li>
+                            <a href="#">DeskTime for Freelancers</a></li>
+                        <li>
+                            <a href="#">FAQ</a></li>
+                        <li>
+                            <a href="#">Case Studies</a></li>
+                        <li>
+                            <a href="#">Webinars</a></li>
+                        <li>
+                            <a href="#">Blog</a></li>
+
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Integration</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Trello</a></li>
+                        <li>
+                            <a href="#">Basecamp</a></li>
+                        <li>
+                            <a href="#">Jira</a></li>
+                        <li>
+                            <a href="#">Asana</a></li>
+                        <li>
+                            <a href="#">Outlook Calendar</a></li>
+                        <li>
+                            <a href="#">Google Calendar</a></li>
+
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Features</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Automatic time tracking</a></li>
+                        <li>
+                            <a href="#">URL & App tracking</a></li>
+                        <li>
+                            <a href="#">Screenshots</a></li>
+                        <li>
+                            <a href="#">Project time tracking</a></li>
+                        <li>
+                            <a href="#">Shift scheduling</a></li>
+                        <li>
+                            <a href="#">Offline time tracking</a></li>
+                        <li>
+                            <a href="#">Invoicing</a></li>
+                        <li>
+                            <a href="#">Absence Calendar</a></li>
+                        <li>
+                            <a href="#">Mobile app</a></li>
+                        <li>
+                            <a href="#">Feature requests</a></li>
+
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Schedule a demo</a></li>
+                        <li>
+                            <a href="#">Schedule a support call</a></li>
+                        <li>
+                            <a href="#">Send us an e-mail</a></li>
+                        <li>
+                            <a href="#">Request In-person training</a></li>
+                        <li>
+                            <a href="#">Open Chat</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--FOOTER END-->
 
 </body>
 
