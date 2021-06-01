@@ -586,7 +586,7 @@ a:focus {
     .tab-panel {
         display: none;
     }
-    .test {
+    .footer-items {
         display: none;
     }
 }
@@ -854,4 +854,82 @@ a:focus {
     display: inline-flex;
     font-size: 40px;
     padding: 0px 10px;
+}
+
+.top1 {
+    margin: 10px auto;
+    background-image: url(images/office-staff.jpeg) !important;
+    align-items: center;
+    text-align: center;
+}
+
+.feature-section-1 {
+    align-items: center;
+    text-align: center;
+}
+
+.feature-section-2 {
+    margin-top: 50px;
+}
+
+.feature-section-1 button {
+    margin: 10px auto;
+}
+
+@media (max-width: 920px) {
+    .feature-section-1 input {
+        width: 100%;
+    }
+    .feature-section-1 button {
+        margin: 10px auto;
+        width: 100%;
+    }
+    .feature-section-2 {
+        display: block;
+        margin-top: 20px;
+    }
+}
+
+.solution {
+    margin: 50px auto;
+    padding-bottom: 50px;
+}
+
+.feature-section-3 {
+    margin-top: 20px auto;
+}
+
+.octupi-solution {
+    margin-bottom: 30px;
+    background-color: #314f6b;
+}
+
+.solution-box {
+    background-color: #fff;
+    box-shadow: 1px 1px 5px #e3e3e3;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 15px auto;
+    display: inline-flex;
+    width: 350px;
+    height: 80px;
+    align-items: center;
+}
+
+.react-list a {
+    padding-top: 50px;
+    background-color: #333c43;
+}
+
+.solution-box a {
+    font-size: 18px;
+    font-weight: 600;
+    color: #314f6b;
+    padding-top: 10px;
+}
+
+@media (max-width:920px) {
+    .solution-box {
+        width: 100%;
+    }
 }

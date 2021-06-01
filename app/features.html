@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Octupi is a time tracking software solution that also analyzes productivity. The only fully automatic time tracker app. Try the free 14-day trial today!">
+
+    <meta property="og:title" content="Octupi | A Time Tracking App For Businesses &amp; Freelancers">
+    <meta property="og:description" content="Octupi is a time tracking software solution that also analyzes productivity. The only fully automatic time tracker app. Try the free 14-day trial today!">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" href="style/style.css">
+    <title>Octupi</title>
+</head>
+
+<body>
+    <!--NAVIGATION BAR START-->
+    <nav class="navbar">
+        <div class="logo ">
+            <a href="index.html"><img src="images/logo.png" alt="#" width="150px"></a>
+        </div>
+        <div class="content d-flex justify-content-between align-items-center text-white">
+            <!--<div class="logo">
+                <a href="#"><img src="images/logo.png" alt="#" width="150px"></a>
+            </div>-->
+            <ul class="menu-list">
+                <div class="icon cancel-btn">
+                    <i class="fas fa-times text-white"></i>
+                </div>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Demo</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#" class="login">LOGIN</a></li>
+                <li><a href="#" class="sign-up">SIGN UP</a></li>
+            </ul>
+            <div class="icon menu-btn ">
+                <i class="fas fa-bars text-white "></i>
+            </div>
+        </div>
+    </nav>
+    <div class="banner"></div>
+    <script>
+        const body = document.querySelector("body");
+        const navbar = document.querySelector(".navbar");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        menuBtn.onclick = () => {
+            navbar.classList.add("show");
+            menuBtn.classList.add("hide");
+            body.classList.add("disabled");
+        }
+        cancelBtn.onclick = () => {
+            body.classList.remove("disabled");
+            navbar.classList.remove("show");
+            menuBtn.classList.remove("hide");
+        }
+        window.onscroll = () => {
+            this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+        }
+    </script>
+    <!--NAVIGATION BAR END-->
+
+
+
+    <!--SECTION 1 START-->
+    <header>
+        <div class="container-fluid top1">
+            <div class="row feature-section-1">
+                <div class="col-12 text-white">
+                    <h1>Octupi features to help you excel</h1>
+                    <p class="text-white">Useful time and productivity tracking tools to help you and your team reach new productivity levels</p>
+                    <input type="email" placeholder="Your work email"> <button>Start free trial</button>
+                    <p class="text-white">Try free for 14 days. No credit card required. <br> <span class="size text-white"> 
+                        By signing up, you agree to our <a href="#" class="heighlight">terms and privacy policy</a></span>.</p>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <!--SECTION 1 END-->
+
+
+
+    <!--SECTION 2 START-->
+    <section>
+        <div class="container">
+            <div class="row feature-section-2">
+                <div class="col text-center">
+                    <img src="images/boost.png" alt="#">
+                    <h3>Boost productivity by 30%</h3>
+                    <p>Identify and eliminate inefficient habits.</p>
+                </div>
+                <div class="col text-center">
+                    <img src="images/productivity.png" alt="#">
+                    <h3>Stay organized and in control</h3>
+                    <p>Manage your team and track projects in one place. </p>
+                </div>
+                <div class="col text-center">
+                    <img src="images/time-tracking.png" alt="">
+                    <h3>Save time and manual work</h3>
+                    <p>No manual timesheets that take time to fill out and are never 100% reliable. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--SECTION-2 END-->
+
+
+    <!-- SECTION-3 START-->
+    <section>
+        <div class="solution">
+            <div class="container ">
+                <div class="row octupi-solution">
+                    <div class="col text-center">
+                        <h1>Octupi solutions</h1>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <div class="solution-box">
+                            <div>
+                                <img src="images/time.svg" class="media-object" alt="Automatic time tracking">
+                            </div>
+                            <div class="media-body">
+                                <a href="#" target="_blank" title="Automatic time tracking">Automatic time tracking</a>
+                            </div>
+                        </div>
+                        <div class="solution-box">
+                            <div>
+                                <img src="images/document.svg" class="media-object" alt="Document title tracking">
+                            </div>
+                            <div class="media-body">
+                                <a href="#" target="_blank" title="Document title tracking">Document title tracking</a>
+                            </div>
+                        </div>
+                        <div class="solution-box">
+                            <div>
+                                <img src="images/cost.svg" class="media-object" alt="Cost calculation">
+                            </div>
+                            <div class="media-body">
+                                <a href="#" target="_blank" title="Cost calculation">Cost calculation</a>
+                            </div>
+                        </div>
+                        <div class="solution-box">
+                            <div>
+                                <img src="images/absence.svg" class="media-object" alt="Absence calendar">
+                            </div>
+                            <div class="media-body">
+                                <a href="#" target="_blank" title="Absence calendar">Absence calendar</a>
+                            </div>
+                        </div>
+                        <div class="solution-box">
+                            <div>
+                                <img src="images/app.svg" class="media-object" alt="Mobile app">
+                            </div>
+                            <div class="media-body">
+                                <a href="#" target="_blank" title="Mobile app">Mobile app</a>
+                            </div>
+                        </div>
+                        <div class="solution-box">
+                            <div>
+                                <img src="images/screen.svg" class="media-object" alt="Screenshots">
+                            </div>
+                            <div class="media-body">
+                                <a href="#" target="_blank" title="Screenshots">Screenshots</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-4 ">
+                        <div class="solution-box">
+                            <div>
+                                <img src="images/offline.svg" class="media-object" alt="Offline time tracking">
+                            </div>
+                            <div class="media-body">
+                                <a href="#" target="_blank" title="Offline time tracking">Offline time tracking</a>
+                            </div>
+                        </div>
+                        <div class="solution-box">
+                            <div>
+                                <img src="images/pomodoro.svg" class="media-object" alt="Pomodoro timer">
+                            </div>
+                            <div class="media-body">
+                                <a href="#" target="_blank" title="Pomodoro timer">Pomodoro timer</a>
+                            </div>
+                        </div>
+                        <div class="solution-box">
+                            <div>
+                                <img src="images/contact.svg" class="media-object" alt="Team's contacts">
+                            </div>
+                            <div class="media-body">
+                                <a href="#" target="_blank" title="Team's contacts">Team's contacts</a>
+                            </div>
+                        </div>
+                        <div class="solution-box">
+                            <div>
+                                <img src="images/integrate.svg" class="media-object" alt="Third-party Integrations">
+                            </div>
+                            <div class="media-body">
+                                <a href="#" target="_blank" title="Third-party Integrations">Third-party Integrations</a>
+                            </div>
+                        </div>
+                        <div class="solution-box">
+                            <div>
+                                <img src="images/url.svg" class="media-object" alt="URL &amp; app tracking">
+                            </div>
+                            <div class="media-body">
+                                <a href="#" target="_blank" title="URL &amp; App tracking">URL &amp; App tracking</a>
+                            </div>
+                        </div>
+                        <div class="solution-box">
+                            <div>
+                                <img src="images/project.svg" class="media-object" alt="Project tracking">
+                            </div>
+                            <div class="media-body">
+                                <a href="#" target="_blank" title="Project tracking">Project tracking</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 ">
+                        <div class="solution-box">
+                            <div>
+                                <img src="images/private.svg" class="media-object" alt="Private time option">
+                            </div>
+                            <div class="media-body">
+                                <a href="#" target="_blank" title="Private time option">Private time option</a>
+                            </div>
+                        </div>
+                        <div class="solution-box">
+                            <div>
+                                <img src="images/invoicing.svg" class="media-object" alt="Invoicing">
+                            </div>
+                            <div class="media-body">
+                                <a href="#" target="_blank" title="Invoicing">Invoicing</a>
+                            </div>
+                        </div>
+                        <div class="solution-box">
+                            <div>
+                                <img src="images/document.svg" class="media-object" alt="Custom reports">
+                            </div>
+                            <div class="media-body">
+                                <a href="#" title="Custom reports">Custom reports</a>
+                            </div>
+                        </div>
+                        <div class="solution-box">
+                            <div>
+                                <img src="images/scheduling.svg" class="media-object" alt="Shift Scheduling">
+                            </div>
+                            <div class="media-body">
+                                <a href="#" target="_blank" title="Shift Scheduling">Shift Scheduling</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--SECTION-3 END-->
+
+
+    <!--SECTION-4 START-->
+
+
+
+    <!--SECTION-4 END-->
+
+    <!--SECTION-5 START-->
+
+    <!--SECTION-5 END-->
+
+    <!--SECTION-6 START-->
+
+    <!--SECTION-6 END-->
+
+
+    <!--SECTION-7 START-->
+
+    <!--SECTION-7 END-->
+
+    <!--SECTION-8 START-->
+
+
+    <!--SECTION-8 END-->
+
+    <!--SECTION-9 START-->
+
+    <!--SECTION-9 END-->
+
+    <!--SECTION-10 START-->
+
+    <!--SECTION-10 END-->
+
+    <!--FOOTER START-->
+    <footer>
+        <div class="footer-items">
+            <div class="container ">
+                <div class="row">
+                    <div class="col footer-list">
+                        <h3>Octupi</h3>
+                        <ul>
+                            <li>
+                                <a href="#">Terms</a></li>
+                            <li>
+                                <a href="#">Privacy</a></li>
+                            <li>
+                                <a href="#">Cookies</a></li>
+                            <li>
+                                <a href="#">Affiliate terms</a></li>
+                            <li>
+                                <a href="#">Download app</a></li>
+                            <li>
+                                <a href="#">Pricing</a></li>
+                            <li>
+                                <a href="#">Affiliate</a></li>
+                            <li>
+                                <a href="#">Press</a></li>
+                            <li>
+                                <a href="#">Octupi in your language</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col footer-list">
+                        <h3>Learn more</h3>
+                        <ul>
+                            <li>
+                                <a href="#">Employee time tracking</a></li>
+                            <li>
+                                <a href="#">Online employee time clock</a></li>
+                            <li>
+                                <a href="#">Best time tracking apps</a></li>
+                            <li>
+                                <a href="#">Octupi for Business</a></li>
+                            <li>
+                                <a href="#">Octupi for Freelancers</a></li>
+                            <li>
+                                <a href="#">FAQ</a></li>
+                            <li>
+                                <a href="#">Case Studies</a></li>
+                            <li>
+                                <a href="#">Webinars</a></li>
+                            <li>
+                                <a href="#">Blog</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col footer-list">
+                        <h3>Integration</h3>
+                        <ul>
+                            <li>
+                                <a href="#">Trello</a></li>
+                            <li>
+                                <a href="#">Basecamp</a></li>
+                            <li>
+                                <a href="#">Jira</a></li>
+                            <li>
+                                <a href="#">Asana</a></li>
+                            <li>
+                                <a href="#">Outlook Calendar</a></li>
+                            <li>
+                                <a href="#">Google Calendar</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col footer-list">
+                        <h3>Features</h3>
+                        <ul>
+                            <li>
+                                <a href="#">Automatic time tracking</a></li>
+                            <li>
+                                <a href="#">URL & App tracking</a></li>
+                            <li>
+                                <a href="#">Screenshots</a></li>
+                            <li>
+                                <a href="#">Project time tracking</a></li>
+                            <li>
+                                <a href="#">Shift scheduling</a></li>
+                            <li>
+                                <a href="#">Offline time tracking</a></li>
+                            <li>
+                                <a href="#">Invoicing</a></li>
+                            <li>
+                                <a href="#">Absence Calendar</a></li>
+                            <li>
+                                <a href="#">Mobile app</a></li>
+                            <li>
+                                <a href="#">Feature requests</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col footer-list">
+                        <h3>Contact</h3>
+                        <ul>
+                            <li>
+                                <a href="#">Schedule a demo</a></li>
+                            <li>
+                                <a href="#">Schedule a support call</a></li>
+                            <li>
+                                <a href="#">Send us an e-mail</a></li>
+                            <li>
+                                <a href="#">Request In-person training</a></li>
+                            <li>
+                                <a href="#">Open Chat</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section>
+            <div class="container panel-accordion">
+                <div class="row">
+                    <div class="col">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingSix">
+                                    <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                                Octupi
+                            </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseSix" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingSix">
+                                    <div class="panel-body">
+                                        <ul>
+                                            <li>
+                                                <a href="#">Terms</a></li>
+                                            <li>
+                                                <a href="#">Privacy</a></li>
+                                            <li>
+                                                <a href="#">Cookies</a></li>
+                                            <li>
+                                                <a href="#">Affiliate terms</a></li>
+                                            <li>
+                                                <a href="#">Download app</a></li>
+                                            <li>
+                                                <a href="#">Pricing</a></li>
+                                            <li>
+                                                <a href="#">Affiliate</a></li>
+                                            <li>
+                                                <a href="#">Press</a></li>
+                                            <li>
+                                                <a href="#">Octupi in your language</a></li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingSeven">
+                                    <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                                Learn more
+                            </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseSeven" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingSeven">
+                                    <div class="panel-body">
+                                        <ul>
+                                            <li>
+                                                <a href="#">Employee time tracking</a></li>
+                                            <li>
+                                                <a href="#">Online employee time clock</a></li>
+                                            <li>
+                                                <a href="#">Best time tracking apps</a></li>
+                                            <li>
+                                                <a href="#">Octupi for Business</a></li>
+                                            <li>
+                                                <a href="#">Octupi for Freelancers</a></li>
+                                            <li>
+                                                <a href="#">FAQ</a></li>
+                                            <li>
+                                                <a href="#">Case Studies</a></li>
+                                            <li>
+                                                <a href="#">Webinars</a></li>
+                                            <li>
+                                                <a href="#">Blog</a></li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingEight">
+                                    <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+                                Integration
+                            </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseEight" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingEight">
+                                    <div class="panel-body">
+
+                                        <ul>
+                                            <li>
+                                                <a href="#">Trello</a></li>
+                                            <li>
+                                                <a href="#">Basecamp</a></li>
+                                            <li>
+                                                <a href="#">Jira</a></li>
+                                            <li>
+                                                <a href="#">Asana</a></li>
+                                            <li>
+                                                <a href="#">Outlook Calendar</a></li>
+                                            <li>
+                                                <a href="#">Google Calendar</a></li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingNine">
+                                    <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
+                                Features
+                            </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseNine" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingNine">
+                                    <div class="panel-body">
+
+                                        <ul>
+                                            <li>
+                                                <a href="#">Automatic time tracking</a></li>
+                                            <li>
+                                                <a href="#">URL & App tracking</a></li>
+                                            <li>
+                                                <a href="#">Screenshots</a></li>
+                                            <li>
+                                                <a href="#">Project time tracking</a></li>
+                                            <li>
+                                                <a href="#">Shift scheduling</a></li>
+                                            <li>
+                                                <a href="#">Offline time tracking</a></li>
+                                            <li>
+                                                <a href="#">Invoicing</a></li>
+                                            <li>
+                                                <a href="#">Absence Calendar</a></li>
+                                            <li>
+                                                <a href="#">Mobile app</a></li>
+                                            <li>
+                                                <a href="#">Feature requests</a></li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTen">
+                                    <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="true" aria-controls="collapseTen">
+                                Contact
+                            </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTen" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingTen">
+                                    <div class="panel-body">
+
+                                        <ul>
+                                            <li>
+                                                <a href="#">Schedule a demo</a></li>
+                                            <li>
+                                                <a href="#">Schedule a support call</a></li>
+                                            <li>
+                                                <a href="#">Send us an e-mail</a></li>
+                                            <li>
+                                                <a href="#">Request In-person training</a></li>
+                                            <li>
+                                                <a href="#">Open Chat</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row socail-icons">
+                    <div class="col-md-4 text-center">
+                        <img src="images/logo.png" alt="#" width="200px">
+                    </div>
+                    <div class="col-md-1">
+
+                    </div>
+                    <div class="col   text-center align-items-center">
+                        <ul>
+                            <li>
+                                <a href="#"></a><i class="fa fa-facebook-square" aria-hidden="true"></i>
+                                </i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <img src="images/google-play.png" alt="#" width="150px">
+                            </li>
+                            <li>
+                                <img src="images/app-store.png" alt="#" width="150px">
+
+                            </li>
+                        </ul>
+
+
+                    </div>
+                </div>
+        </section>
+        <!--FOOTER END-->
+    </footer>
+
+
+</body>
+
+</html>
