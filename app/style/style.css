@@ -586,6 +586,9 @@ a:focus {
     .tab-panel {
         display: none;
     }
+    .test {
+        display: none;
+    }
 }
 
 
@@ -841,12 +844,6 @@ a:focus {
 .footer-list h3 {
     margin-left: 15px;
     font-size: 18px;
-}
-
-@media (max-width:920) {
-    .footer-item {
-        display: none;
-    }
 }
 
 .socail-icons {
