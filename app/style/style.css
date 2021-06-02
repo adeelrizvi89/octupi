@@ -809,7 +809,8 @@
         }
         
         .top1 {
-            background-image: url(../images/office-staff.jpeg) !important;
+            background-image: url(../images/office-staff.jpeg) no-repeat !important;
+            background-size: cover;
             align-items: center;
             text-align: center;
             padding: 50px 25px;
