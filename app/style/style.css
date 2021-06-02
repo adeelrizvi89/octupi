@@ -809,8 +809,7 @@
         }
         
         .top1 {
-            margin: 10px auto;
-            background-image: url(images/office-staff.jpeg) !important;
+            background-image: url(../images/office-staff.jpeg) !important;
             align-items: center;
             text-align: center;
             padding: 50px 25px;
@@ -903,7 +902,7 @@
                 font-size: 18px;
             }
             .left-side img {
-                width: 300px;
+                width: 200px;
                 margin-top: 20px;
             }
             .left-side h2,
@@ -932,7 +931,7 @@
                 font-size: 18px;
             }
             .right-side img {
-                width: 300px;
+                width: 200px;
                 margin-top: 20px;
             }
             .right-side h2,
