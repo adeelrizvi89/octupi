@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Octupi is a time tracking software solution that also analyzes productivity. The only fully automatic time tracker app. Try the free 14-day trial today!">
+
+    <meta property="og:title" content="Octupi | A Time Tracking App For Businesses &amp; Freelancers">
+    <meta property="og:description" content="Octupi is a time tracking software solution that also analyzes productivity. The only fully automatic time tracker app. Try the free 14-day trial today!">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" href="style/style.css">
+    <title>Octupi</title>
+</head>
+
+<body>
+    <!--NAVIGATION BAR START-->
+    <nav class="navbar">
+        <div class="logo ">
+            <a href="index.html"><img src="images/logo.png" alt="#" width="150px"></a>
+        </div>
+        <div class="content d-flex justify-content-between align-items-center text-white">
+            <!--<div class="logo">
+                <a href="#"><img src="images/logo.png" alt="#" width="150px"></a>
+            </div>-->
+            <ul class="menu-list">
+                <div class="icon cancel-btn">
+                    <i class="fas fa-times text-white"></i>
+                </div>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="#">Demo</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#" class="login">LOGIN</a></li>
+                <li><a href="#" class="sign-up">SIGN UP</a></li>
+            </ul>
+            <div class="icon menu-btn ">
+                <i class="fas fa-bars text-white "></i>
+            </div>
+        </div>
+    </nav>
+    <div class="banner"></div>
+    <script>
+        const body = document.querySelector("body");
+        const navbar = document.querySelector(".navbar");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        menuBtn.onclick = () => {
+            navbar.classList.add("show");
+            menuBtn.classList.add("hide");
+            body.classList.add("disabled");
+        }
+        cancelBtn.onclick = () => {
+            body.classList.remove("disabled");
+            navbar.classList.remove("show");
+            menuBtn.classList.remove("hide");
+        }
+        window.onscroll = () => {
+            this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+        }
+    </script>
+    <!--NAVIGATION BAR END-->
+
+    <!--SECTION 1 START-->
+    <header>
+        <div class="container-fluid about-top-1">
+            <div class="row about-section-1 ">
+                <div class="col-12 text-white">
+                    <h1>About Octupi</h1>
+                    <p class="text-white">We help businesses grow and people become more successful </p>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <!-- SECTION-1 START-->
+    <div class="container about-top-2">
+        <div class="row about-section-2">
+            <div class="col">
+                <h2 class="bold">
+                    Built first for us, then made available to others
+
+                </h2>
+                <img src="images/team.jpeg" alt="team" class="about-img-left">
+                <p>
+                    Octupi was born out of the need for the Draugiem Group to manage their many employees. An internal application was developed, and we soon realized that we'd made a tool that could be useful for many other companies. Why not offer it to them? - we thought.
+                    And so, the development began. <br><br>At Octupi, we’re committed to accountability, transparency, and fairness. Octupi is a product designed to increase productivity in an open and empowering environment. The added
+                    benefit? Boosting your employees and motivating them to perform at 100% of their potential.
+                </p>
+            </div>
+            <div class="col about-img-right">
+                <img src="images/team.jpeg" alt="team">
+
+            </div>
+        </div>
+    </div>
+
+
+    <!--SECTION 1 END-->
+    <!-- SECTION-2 START-->
+
+    <div class="container ">
+        <div class="row about-section-3">
+            <h2 class="text-center bold">Our milestones and how it all began</h2>
+        </div>
+        <div class="row about-item-left">
+            <div class="col about-img-1 text-center">
+                <img src="images/on-demand.png" alt="">
+            </div>
+            <div class="col">
+                <p class="heighlight bold">March 2021</p>
+                <h3 class="bold">On-demand webinars are live </h3>
+                <div class="about-img-2 text-center">
+                    <img src="images/on-demand.png" alt="">
+
+                </div>
+                <p>When it comes to software demonstration video tutorials work wonders. It's the easiest way to make sure our customers get the most out of all the features Octupi has to offer. On-demand webinars do just that. We redesigned our webinar
+                    landing page and made the short and easy how-to videos available for anyone at any time. </p>
+            </div>
+
+        </div>
+    </div>
+    <div class="container ">
+        <div class="row about-item-right">
+            <div class="col m-bottom">
+                <p class="heighlight bold">January 2021</p>
+                <h3 class="bold">¡Hola! ¿Necesita ayuda? Support is now available in Spanish </h3>
+                <div class="about-img-2 text-center">
+                    <img src="images/support.png" alt="">
+
+                </div>
+                <p>It's all about the best customer support these days, and we're up for the challenge. Octupi achieves one of our biggest goals for 2021 – our support is now available in the Spanish language. Next up – a full system localization. ¡vamos!
+
+                </p>
+            </div>
+            <div class="col about-img-1 text-center">
+                <img src="images/support.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container ">
+        <div class="row about-item-left">
+            <div class="col about-img-1 text-center">
+                <img src="images/homepage.png" alt="">
+            </div>
+            <div class="col m-bottom">
+                <p class="heighlight bold">December 2020</p>
+                <h3 class="bold">New Year, new us! Making first impressions count </h3>
+                <div class="about-img-2 text-center">
+                    <img src="images/homepage.png" alt="">
+
+                </div>
+                <p>To close out 2020 and kick-off 2021 fresh, Octupi's homepage receives a dapper redesign that better captures who we are, what we do, and what we stand for. And it's also prettier. Much prettier. Which is just as important!
+
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <div class="container ">
+        <div class="row about-item-right">
+            <div class="col m-bottom">
+                <p class="heighlight bold">October 2020</p>
+                <h3 class="bold">Coming home: Octupi is now an EU-based company </h3>
+                <div class="about-img-2 text-center">
+                    <img src="images/eu-company.svg" alt="">
+
+                </div>
+                <p>IEven though, legally speaking, we've been a US-based company from the very beginning, our main center of operations has always been Latvia. Now, we're just changing our legal address and legal name to have everything in one place. </p>
+            </div>
+            <div class="col about-img-1 text-center">
+                <img src="images/eu-company.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container ">
+        <div class="row about-item-left">
+            <div class="col about-img-1 text-center">
+                <img src="images/server.svg" alt="">
+            </div>
+            <div class="col m-bottom">
+                <p class="heighlight bold">July 2020</p>
+                <h3 class="bold">Faster, better, stronger </h3>
+                <div class="about-img-2 text-center">
+                    <img src="images/server.svg" alt="">
+
+                </div>
+                <p>We upgraded our physical infrastructure by deploying new servers in the USA and India to meet the needs of our growing user base in these and nearby markets. Octupi users from these areas now have an even smoother and faster Octupi experience.
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <div class="container ">
+        <div class="row about-item-right">
+            <div class="col m-bottom">
+                <p class="heighlight bold">June 2020</p>
+                <h3 class="bold">Reaching every corner of the world - Reseller program launched! </h3>
+                <div class="about-img-2 text-center">
+                    <img src="images/world.svg" alt="">
+
+                </div>
+                <p>
+                    Octupi begins working with resellers and distributors worldwide to make payments easier and break down language and communication barriers for new users in countries beyond our main base of operations, thus ensuring broader and better accessibility to
+                    Octupi. </p>
+            </div>
+            <div class="col about-img-1 text-center">
+                <img src="images/world.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container ">
+        <div class="row about-item-left">
+            <div class="col about-img-1 text-center">
+                <img src="images/mobile-app.png" alt="">
+            </div>
+            <div class="col m-bottom">
+                <p class="heighlight bold">April 2020</p>
+                <h3 class="bold">Update of the year – a brand new mobile app </h3>
+                <div class="about-img-2 text-center">
+                    <img src="images/mobile-app.png" alt="">
+
+                </div>
+                <p>The Octupi mobile app gets a major update, both UX and feature-wise. The renewed app now includes a mobile timer for time tracking on the go, allows you to assign time to individual projects, and log offline time.
+
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <div class="container ">
+        <div class="row about-item-right">
+            <div class="col m-bottom">
+                <p class="heighlight bold">March 2020</p>
+                <h3 class="bold">Prime plans for prime customers </h3>
+                <div class="about-img-2 text-center">
+                    <img src="images/pricing-plans.png" alt="">
+
+                </div>
+                <p>
+                    Two new pricing plans are introduced to fit the needs of our premium and enterprise-level customers. The new plans – Premium and Enterprise – offer clients a bunch of extra features and functionalities, as well as priority support.
+
+                </p>
+            </div>
+            <div class="col about-img-1 text-center">
+                <img src="images/pricing-plans.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container ">
+        <div class="row about-item-left">
+            <div class="col about-img-1 text-center">
+                <img src="images/invoicing-1.png" alt="">
+            </div>
+            <div class="col m-bottom">
+                <p class="heighlight bold">February 2020</p>
+                <h3 class="bold">Hello, Exports and Invoicing! </h3>
+                <div class="about-img-2 text-center">
+                    <img src="images/invoicing-1.png" alt="">
+
+                </div>
+                <p>The Octupi mobile app gets a major update, both UX and feature-wise. The renewed app now includes a mobile timer for time tracking on the go, allows you to assign time to individual projects, and log offline time.
+
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <div class="container ">
+        <div class="row about-item-right">
+            <div class="col m-bottom">
+                <p class="heighlight bold">December 2019</p>
+                <h3 class="bold">81 million hours tracked – that's 9268 years </h3>
+                <div class="about-img-2 text-center">
+                    <img src="images/8000bc.png" alt="">
+
+                </div>
+                <p>
+                    The total time tracked by all Octupi users reaches 81 million hours – that’s 9268 years. In linear time, that's as if Octupi had tracked every minute since homo sapien domesticated cats in around 8000 BC. Octupi now works in 203 countries, serving 184
+                    000 users in 8600 companies.
+
+
+                </p>
+            </div>
+            <div class="col about-img-1 text-center">
+                <img src="images/8000bc.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container ">
+        <div class="row about-item-left">
+            <div class="col about-img-1 text-center">
+                <img src="images/youtube.png" alt="">
+            </div>
+            <div class="col m-bottom">
+                <p class="heighlight bold">October 2020</p>
+                <h3 class="bold">The re-birth of Octupi's YouTube channel </h3>
+                <div class="about-img-2 text-center">
+                    <img src="images/youtube.png" alt="">
+
+                </div>
+                <p>The Octupi team sets a goal to create entertaining and practically useful content on YouTube to have an even more open conversation about productivity, management, and time tracking and the benefits behind it.
+
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <div class="container ">
+        <div class="row about-item-right">
+            <div class="col m-bottom">
+                <p class="heighlight bold">September 2019</p>
+                <h3 class="bold">Introducing Shift Scheduling </h3>
+                <div class="about-img-2 text-center">
+                    <img src="images/scheduling.png" alt="">
+
+                </div>
+                <p>
+                    A new feature is introduced – employee shift scheduling. It allows managers to plan shifts, see a complete overview of created shifts, that way avoiding overstaffing and understaffing. It also gives an insight into shift workers' productivity.
+                </p>
+            </div>
+            <div class="col about-img-1 text-center">
+                <img src="images/scheduling.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container ">
+        <div class="row about-item-left">
+            <div class="col about-img-1 text-center">
+                <img src="images/annual-billing.png" alt="">
+            </div>
+            <div class="col m-bottom">
+                <p class="heighlight bold">April 2019</p>
+                <h3 class="bold">Introducing annual billing </h3>
+                <div class="about-img-2 text-center">
+                    <img src="images/annual-billing.png" alt="">
+
+                </div>
+                <p>
+                    Users are offered a more convenient and cost-efficient billing option. With the annual payment, users are charged once a year and save a month's worth of fees.
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <div class="container ">
+        <div class="row about-item-right">
+            <div class="col m-bottom">
+                <p class="heighlight bold">March 2019</p>
+                <h3 class="bold">Project tracking gets an update </h3>
+                <div class="about-img-2 text-center">
+                    <img src="images/project-tracking.png" alt="">
+
+                </div>
+                <p>
+                    One of the most popular features – project tracking – becomes easier to administer. New user-friendly functionalities are added, including project search and time and cost estimation.
+                </p>
+            </div>
+            <div class="col about-img-1 text-center">
+                <img src="images/project-tracking.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container ">
+        <div class="row about-item-left">
+            <div class="col about-img-1 text-center">
+                <img src="images/gitlab.png" alt="">
+            </div>
+            <div class="col m-bottom">
+                <p class="heighlight bold">January 2019</p>
+                <h3 class="bold">New integrations – Trello and Gitlab </h3>
+                <div class="about-img-2 text-center">
+                    <img src="images/gitlab.png" alt="">
+
+                </div>
+                <p>
+                    Octupi continues to add integrations with popular work tools. The Trello and Gitlab integrations allow users to automatically import their cards and issues to Octupi and track time.
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <div class="container ">
+        <div class="row about-item-right">
+            <div class="col">
+                <p class="heighlight bold">December 2018</p>
+                <h3 class="bold">We’ve tracked 63 million hours or 7228 years</h3>
+                <div class="about-img-2 text-center">
+                    <img src="images/pyramid.png" alt="">
+
+                </div>
+                <p>
+                    Octupi now works in 174 countries, serving 144 000 users in 6700 companies. Until this time, we’ve tracked 63 million hours - that’s 7228 years.
+                </p>
+            </div>
+            <div class="col about-img-1 text-center">
+                <img src="images/pyramid.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container ">
+        <div class="row about-item-left">
+            <div class="col about-img-1 text-center">
+                <img src="images/pomodor.png" alt="">
+            </div>
+            <div class="col m-bottom">
+                <p class="heighlight bold">July 2018</p>
+                <h3 class="bold">Octupi introduces the Pomodoro Timer </h3>
+                <div class="about-img-2 text-center">
+                    <img src="images/pomodor.png" alt="">
+
+                </div>
+                <p>
+                    The most requested feature of 2017/2018 is here! Users can now enable the built-in Pomodoro timer to remind themselves to take regular breaks - every 52, 60 or 90 minutes.
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <div class="container ">
+        <div class="row about-item-right">
+            <div class="col">
+                <p class="heighlight bold">June 2018</p>
+                <h3 class="bold">Integrations with major project management apps </h3>
+                <div class="about-img-2 text-center">
+                    <img src="images/integrations-1.png" alt="">
+
+                </div>
+                <p>
+                    Octupi now integrates with Jira, Asana, Basecamp, and Zapier. Users can pull their projects into Octupi and log their time within the apps. Additionally, My Octupi gets a new Messaging feature. Users can now leave notes for their colleagues right inside
+                    Octupi. </p>
+            </div>
+            <div class="col about-img-1 text-center">
+                <img src="images/integrations-1.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container ">
+        <div class="row about-item-left">
+            <div class="col about-img-1 text-center">
+                <img src="images/speed.png" alt="">
+            </div>
+            <div class="col">
+                <p class="heighlight bold">January 2018</p>
+                <h3 class="bold">Octupi picks up speed </h3>
+                <div class="about-img-2 text-center">
+                    <img src="images/speed.png" alt="">
+
+                </div>
+                <p>
+                    Octupi changes its database servers and doubles their speed and capacity. The same month, the Octupi desktop app gets new design icons on Windows, MAC, and Linux.
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <div class="container ">
+        <div class="row about-item-right">
+            <div class="col">
+                <p class="heighlight bold">September 2018</p>
+                <h3 class="bold">Octupi launches its first integration - with Google Calendar </h3>
+                <div class="about-img-2 text-center">
+                    <img src="images/calendar.png" alt="">
+
+                </div>
+                <p>
+                    The Octupi + Google Calendar integration automatically logs users' offline time - the time they've been away from their computer, in meetings or for other work-related reasons. That way, users now can see how much time they spend in meetings, business
+                    lunches, work-related trainings, and more. </p>
+            </div>
+            <div class="col about-img-1 text-center">
+                <img src="images/calendar.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container ">
+        <div class="row about-item-left">
+            <div class="col about-img-1 text-center">
+                <img src="images/100000.png" alt="">
+            </div>
+            <div class="col">
+                <p class="heighlight bold">July 2017</p>
+                <h3 class="bold">The 100,000th user joins Octupi </h3>
+                <div class="about-img-2 text-center">
+                    <img src="images/100000.png" alt="">
+
+                </div>
+                <p>
+                    Today, over 100K people in 98 countries use Octupi to optimize their work time and get more things done. Which, apparently, works: the stats show that Octupi users have an average productivity of 80.9%. It means, out of an 8-hour workday, almost 6.5 hours
+                    are spent on work-related tasks. </p>
+            </div>
+
+        </div>
+    </div>
+    <div class="container ">
+        <div class="row about-item-right">
+            <div class="col">
+                <p class="heighlight bold">March 2017</p>
+                <h3 class="bold">Here come Screenshots - the most requested feature of all time </h3>
+                <div class="about-img-2 text-center">
+                    <img src="images/screenshot.png" alt="">
+
+                </div>
+                <p>
+                    After insistent customer requests, Octupi adds the Screenshots feature. The new feature lets managers capture employees’ screens in random 15-minutes intervals to follow the work in progress. It is mostly used to manage remote teams, where employees are
+                    paid by the hour. </p>
+            </div>
+            <div class="col about-img-1 text-center">
+                <img src="images/screenshot.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container ">
+        <div class="row about-item-left">
+            <div class="col about-img-1 text-center">
+                <img src="images/design.png" alt="">
+            </div>
+            <div class="col">
+                <p class="heighlight bold">June 2016</p>
+                <h3 class="bold">Octupi gets makeover with major functional updates </h3>
+                <div class="about-img-2 text-center">
+                    <img src="images/design.png" alt="">
+
+                </div>
+                <p>
+                    The app gets a design makeover. The new design makes it easier for users to read their data - graphics and other data visualizations are now made more comprehensive. Additionally, another set of much requested features is added, including the Absence
+                    calendar and Colleagues. The new features let teams better organize their time off and store colleagues’ contact information in one place.
+
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <div class="container ">
+        <div class="row about-item-right">
+            <div class="col">
+                <p class="heighlight bold">June 2015</p>
+                <h3 class="bold">The team starts its work on Octupi's new version </h3>
+                <div class="about-img-2 text-center">
+                    <img src="images/v3.png" alt="">
+
+                </div>
+                <p>
+                    The long work on Octupi's third version begins. By paying a great attention to detail, the new version aims to improve user experience and make the software's user interface more comprehensive.
+                </p>
+            </div>
+            <div class="col about-img-1 text-center">
+                <img src="images/v3.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container ">
+        <div class="row about-item-left">
+            <div class="col about-img-1 text-center">
+                <img src="images/viral.png" alt="">
+            </div>
+            <div class="col">
+                <p class="heighlight bold">August 2014</p>
+                <h3 class="bold">A study conducted by Octupi goes viral </h3>
+                <div class="about-img-2 text-center">
+                    <img src="images/viral.png" alt="">
+
+                </div>
+                <p>
+                    Octupi analyzes the top 10% of its most productive employees and discovers their one common trait: they work 52 minutes, then break for 17 minutes. Originally published on Daily Muse, the article goes viral and gets republished by Mashable, Business Insider,
+                    Inc.com and Lifehacker, and many other popular media.
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <div class="container ">
+        <div class="row about-item-right">
+            <div class="col m-bottom">
+                <p class="heighlight bold">October 2013</p>
+                <h3 class="bold">Octupi becomes profitable </h3>
+                <div class="about-img-2 text-center">
+                    <img src="images/profit.png" alt="">
+
+                </div>
+                <p>
+                    At the end of 2013 Octupi stands on its own feet and starts working with profit. The startup can now cover its own expenses and doesn't needs no help from other companies within the Draugiem Group. </p>
+            </div>
+            <div class="col about-img-1 text-center">
+                <img src="images/profit.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container ">
+        <div class="row about-item-left">
+            <div class="col about-img-1 m-bottom text-center">
+                <img src="images/v2.png" alt="">
+            </div>
+            <div class="col ">
+                <p class="heighlight bold">October 2012</p>
+                <h3 class="bold">Octupi gets its first major update - fresh design and new features </h3>
+                <div class="about-img-2 text-center">
+                    <img src="images/v2.png" alt="">
+
+                </div>
+                <p>
+                    Adding various major features, Octupi launches its second version. From now on, users can track their projects and tasks with the Projects feature, create and download Reports, and track their Offline time – read: log the time they’ve spent away from
+                    the computer. The new version also has a fresh, user-friendly design and better visualization of the tracked data. </p>
+            </div>
+
+        </div>
+    </div>
+    <div class="container ">
+        <div class="row about-item-right">
+            <div class="col ">
+                <p class="heighlight bold">February 2012</p>
+                <h3 class="bold">Octupi starts its online "diary"</h3>
+                <div class="about-img-2 text-center">
+                    <img src="images/blog.png" alt="">
+
+                </div>
+                <p>On February 1st, the first article is published on the Octupi blog. The blog is made as the place to share the latest productivity insights and tips on how to optimize one’s time. Its most popular blog post that describes how office environment
+                    affects productivity has since been read nearly 40'000 times. </p>
+            </div>
+            <div class="col about-img-1 text-center">
+                <img src="images/blog.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container ">
+        <div class="row about-item-left">
+            <div class="col about-img-1 text-center">
+                <img src="images/loyal.png" alt="">
+            </div>
+            <div class="col">
+                <p class="heighlight bold">January 2012</p>
+                <h3 class="bold">Meeting Octupi's most loyal customer </h3>
+                <div class="about-img-2 text-center">
+                    <img src="images/loyal.png" alt="">
+
+                </div>
+                <p>
+                    A USA based company, 121 USA LLC, signs up and becomes Octupi’s customer in January 2012. Five years later, the team of 63 people is still using the app, which makes it our most loyal customer. Since the launch of the app, over 6000 other companies have
+                    joined and use Octupi. </p>
+            </div>
+
+        </div>
+    </div>
+    <div class="container ">
+        <div class="row about-item-right">
+            <div class="col">
+                <p class="heighlight bold">January 2012</p>
+                <h3 class="bold">New CEO takes over the reins</h3>
+                <div class="about-img-2 text-center">
+                    <img src="images/ceo.png" alt="">
+
+                </div>
+                <p>After spending 5 years in the pharmacy business and a year managing a startup, called SportSnaps, Artis Rozentals joins the Octupi team and becomes its CEO.
+
+                </p>
+            </div>
+            <div class="col about-img-1 text-center">
+                <img src="images/ceo.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container ">
+        <div class="row about-item-left">
+            <div class="col about-img-1 m-bottom text-center">
+                <img src="images/first-employee.png" alt="">
+            </div>
+            <div class="col ">
+                <p class="heighlight bold">August 2011</p>
+                <h3 class="bold">The team is growing - Octupi's first full-time employee hired </h3>
+                <div class="about-img-2 text-center">
+                    <img src="images/first-employee.png" alt="">
+
+                </div>
+                <p>
+                    The Canadian born Latvian, Julia Gifford, becomes the first full-time employee of Octupi. Today, there are 7 people on the Octupi team: the CEO, the customer relations manager, three programmers, one designer, and a content marketer.
+
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <div class="container ">
+        <div class="row about-item-right">
+            <div class="col">
+                <p class="heighlight bold">July 2011</p>
+                <h3 class="bold">Welcoming Octupi's first registered user </h3>
+                <div class="about-img-2 text-center">
+                    <img src="images/first-user.png" alt="">
+
+                </div>
+                <p>Three weeks after the launch of the software, the very first customer registers and begins tracking time with Octupi. Time tracking is still the core feature of the app: in 6 years, Octupi has tracked over 144 million hours, which is almost
+                    16492 years of time.
+                </p>
+            </div>
+            <div class="col about-img-1 text-center">
+                <img src="images/first-user.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container ">
+        <div class="row about-item-left">
+            <div class="col about-img-1 text-center">
+                <img src="images/icon2x.png" alt="">
+            </div>
+            <div class="col">
+                <p class="heighlight bold">July, 1st 2011</p>
+                <h3 class="bold">Meet Octupi - the automatic time tracking software! </h3>
+                <div class="about-img-2 text-center">
+                    <img src="images/icon2x.png" alt="">
+
+                </div>
+                <p>
+                    Octupi goes online on July 1st, 2011 under the wings of the Draugiem Group, the Latvia based IT company. The main idea of the time tracking software, from day one, is to increase workplace transparency between employees and management and to make sure
+                    work time is spent faithfully.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <!-- SECTION-2 END-->
+
+    <!-- SECTION-3 START-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col text-center text-white">
+                <h2 class="bold">Join the 14.3K companies worldwide <br> already using Octupi</h2>
+                <button>Sign up for free</button>
+                <p class="text-white">Try free for 14 days. No credit card required.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION-3 END-->
+
+
+
+
+
+    <!--footer-->
+    <div class="footer-items">
+        <div class="container ">
+            <div class="row">
+                <div class="col footer-list">
+                    <h3>Octupi</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Terms</a></li>
+                        <li>
+                            <a href="#">Privacy</a></li>
+                        <li>
+                            <a href="#">Cookies</a></li>
+                        <li>
+                            <a href="#">Affiliate terms</a></li>
+                        <li>
+                            <a href="#">Download app</a></li>
+                        <li>
+                            <a href="#">Pricing</a></li>
+                        <li>
+                            <a href="#">Affiliate</a></li>
+                        <li>
+                            <a href="#">Press</a></li>
+                        <li>
+                            <a href="#">Octupi in your language</a></li>
+
+                    </ul>
+                </div>
+                <div class="col footer-list">
+                    <h3>Learn more</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Employee time tracking</a></li>
+                        <li>
+                            <a href="#">Online employee time clock</a></li>
+                        <li>
+                            <a href="#">Best time tracking apps</a></li>
+                        <li>
+                            <a href="#">Octupi for Business</a></li>
+                        <li>
+                            <a href="#">Octupi for Freelancers</a></li>
+                        <li>
+                            <a href="#">FAQ</a></li>
+                        <li>
+                            <a href="#">Case Studies</a></li>
+                        <li>
+                            <a href="#">Webinars</a></li>
+                        <li>
+                            <a href="#">Blog</a></li>
+
+                    </ul>
+                </div>
+                <div class="col footer-list">
+                    <h3>Integration</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Trello</a></li>
+                        <li>
+                            <a href="#">Basecamp</a></li>
+                        <li>
+                            <a href="#">Jira</a></li>
+                        <li>
+                            <a href="#">Asana</a></li>
+                        <li>
+                            <a href="#">Outlook Calendar</a></li>
+                        <li>
+                            <a href="#">Google Calendar</a></li>
+
+                    </ul>
+                </div>
+                <div class="col footer-list">
+                    <h3>Features</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Automatic time tracking</a></li>
+                        <li>
+                            <a href="#">URL & App tracking</a></li>
+                        <li>
+                            <a href="#">Screenshots</a></li>
+                        <li>
+                            <a href="#">Project time tracking</a></li>
+                        <li>
+                            <a href="#">Shift scheduling</a></li>
+                        <li>
+                            <a href="#">Offline time tracking</a></li>
+                        <li>
+                            <a href="#">Invoicing</a></li>
+                        <li>
+                            <a href="#">Absence Calendar</a></li>
+                        <li>
+                            <a href="#">Mobile app</a></li>
+                        <li>
+                            <a href="#">Feature requests</a></li>
+
+                    </ul>
+                </div>
+                <div class="col footer-list">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Schedule a demo</a></li>
+                        <li>
+                            <a href="#">Schedule a support call</a></li>
+                        <li>
+                            <a href="#">Send us an e-mail</a></li>
+                        <li>
+                            <a href="#">Request In-person training</a></li>
+                        <li>
+                            <a href="#">Open Chat</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="container panel-accordion">
+            <div class="row">
+                <div class="col">
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingSix">
+                                <h3 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                                Octupi
+                            </a>
+                                </h3>
+                            </div>
+                            <div id="collapseSix" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingSix">
+                                <div class="panel-body">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Terms</a></li>
+                                        <li>
+                                            <a href="#">Privacy</a></li>
+                                        <li>
+                                            <a href="#">Cookies</a></li>
+                                        <li>
+                                            <a href="#">Affiliate terms</a></li>
+                                        <li>
+                                            <a href="#">Download app</a></li>
+                                        <li>
+                                            <a href="#">Pricing</a></li>
+                                        <li>
+                                            <a href="#">Affiliate</a></li>
+                                        <li>
+                                            <a href="#">Press</a></li>
+                                        <li>
+                                            <a href="#">Octupi in your language</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingSeven">
+                                <h3 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                                Learn more
+                            </a>
+                                </h3>
+                            </div>
+                            <div id="collapseSeven" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingSeven">
+                                <div class="panel-body">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Employee time tracking</a></li>
+                                        <li>
+                                            <a href="#">Online employee time clock</a></li>
+                                        <li>
+                                            <a href="#">Best time tracking apps</a></li>
+                                        <li>
+                                            <a href="#">Octupi for Business</a></li>
+                                        <li>
+                                            <a href="#">Octupi for Freelancers</a></li>
+                                        <li>
+                                            <a href="#">FAQ</a></li>
+                                        <li>
+                                            <a href="#">Case Studies</a></li>
+                                        <li>
+                                            <a href="#">Webinars</a></li>
+                                        <li>
+                                            <a href="#">Blog</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingEight">
+                                <h3 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+                                Integration
+                            </a>
+                                </h3>
+                            </div>
+                            <div id="collapseEight" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingEight">
+                                <div class="panel-body">
+
+                                    <ul>
+                                        <li>
+                                            <a href="#">Trello</a></li>
+                                        <li>
+                                            <a href="#">Basecamp</a></li>
+                                        <li>
+                                            <a href="#">Jira</a></li>
+                                        <li>
+                                            <a href="#">Asana</a></li>
+                                        <li>
+                                            <a href="#">Outlook Calendar</a></li>
+                                        <li>
+                                            <a href="#">Google Calendar</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingNine">
+                                <h3 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
+                                Features
+                            </a>
+                                </h3>
+                            </div>
+                            <div id="collapseNine" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingNine">
+                                <div class="panel-body">
+
+                                    <ul>
+                                        <li>
+                                            <a href="#">Automatic time tracking</a></li>
+                                        <li>
+                                            <a href="#">URL & App tracking</a></li>
+                                        <li>
+                                            <a href="#">Screenshots</a></li>
+                                        <li>
+                                            <a href="#">Project time tracking</a></li>
+                                        <li>
+                                            <a href="#">Shift scheduling</a></li>
+                                        <li>
+                                            <a href="#">Offline time tracking</a></li>
+                                        <li>
+                                            <a href="#">Invoicing</a></li>
+                                        <li>
+                                            <a href="#">Absence Calendar</a></li>
+                                        <li>
+                                            <a href="#">Mobile app</a></li>
+                                        <li>
+                                            <a href="#">Feature requests</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTen">
+                                <h3 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="true" aria-controls="collapseTen">
+                                Contact
+                            </a>
+                                </h3>
+                            </div>
+                            <div id="collapseTen" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingTen">
+                                <div class="panel-body">
+
+                                    <ul>
+                                        <li>
+                                            <a href="#">Schedule a demo</a></li>
+                                        <li>
+                                            <a href="#">Schedule a support call</a></li>
+                                        <li>
+                                            <a href="#">Send us an e-mail</a></li>
+                                        <li>
+                                            <a href="#">Request In-person training</a></li>
+                                        <li>
+                                            <a href="#">Open Chat</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row socail-icons">
+                <div class="col-md-4 text-center">
+                    <img src="images/logo.png" alt="#" width="200px">
+                </div>
+                <div class="col-md-1">
+
+                </div>
+                <div class="col   text-center align-items-center">
+                    <ul>
+                        <li>
+                            <a href="#"></a><i class="fa fa-facebook-square" aria-hidden="true"></i>
+                            </i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <img src="images/google-play.png" alt="#" width="150px">
+                        </li>
+                        <li>
+                            <img src="images/app-store.png" alt="#" width="150px">
+
+                        </li>
+                    </ul>
+
+
+                </div>
+            </div>
+    </section>
+    </footer>
+    <!--FOOTER END-->
+
+
+
+</body>
+
+</html>

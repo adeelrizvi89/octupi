@@ -1011,3 +1011,168 @@
                 width: 100%;
             }
         }
+        
+        .about-top-1 {
+            background-image: url(../images/office-staff.jpeg);
+            background-size: cover;
+            height: 300px;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .about-section-1 h1 {
+            font-size: 60px;
+            font-weight: bolder;
+            margin-top: 100px;
+        }
+        
+        .about-top-2 {
+            margin-top: -50px;
+            padding: 20px 50px;
+            background-color: #f2f4ff;
+            box-shadow: 1px 2px 5px rgb(206, 203, 203);
+            border-radius: 20px;
+        }
+        
+        .about-img-right img {
+            width: 100%;
+            height: auto;
+            margin-top: 50px;
+        }
+        
+        .about-img-left {
+            display: none;
+        }
+        
+        @media (max-width:920px) {
+            .about-top-1 {
+                height: auto;
+                align-items: center;
+                text-align: center;
+            }
+            .about-section-1 h1 {
+                font-size: 40px;
+                font-weight: bolder;
+            }
+            .about-top-2 {
+                margin-top: 0px;
+                padding: 10px 15px;
+                background-color: #fff;
+                box-shadow: 1px 2px 5px rgb(206, 203, 203);
+                border-radius: 5px;
+            }
+            .about-section-2 img {
+                width: 100%;
+                margin-top: 20px;
+            }
+            .about-img-right {
+                display: none;
+            }
+            .about-img-left {
+                display: block;
+            }
+        }
+        
+        @media (max-width:480px) {
+            .about-section-2 h2 {
+                text-align: center;
+            }
+            .about-section-2 p {
+                text-align: center;
+            }
+            .about-section-2 img {
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
+        
+        .about-section-3 {
+            margin: 50px auto;
+        }
+        
+        .about-item-right {
+            margin-bottom: 50px;
+        }
+        
+        .about-img-2 {
+            display: none;
+        }
+        
+        .m-bottom {
+            margin-top: 30px;
+        }
+        
+        @media (max-width:920px) {
+            .about-item-right img {
+                width: 100%;
+                margin-top: 20%;
+            }
+            .about-item-right-bg {
+                padding: 15px 0px;
+            }
+            .m-bottom {
+                margin-top: 30px;
+            }
+        }
+        
+        @media (max-width:480px) {
+            .about-item-right img {
+                width: 200px;
+                margin-top: 20px;
+            }
+            .about-item-right p {
+                text-align: center;
+                margin: 0px;
+            }
+            .about-item-right {
+                display: block;
+                margin-bottom: 20px;
+            }
+            .about-item-right h3 {
+                text-align: center;
+                margin: 0px;
+            }
+            .m-bottom {
+                margin-top: 0px;
+            }
+        }
+        
+        .about-item-left {
+            margin-bottom: 50px;
+        }
+        
+        @media (max-width:920px) {
+            .about-item-left img {
+                width: 100%;
+                margin-top: 20%;
+            }
+            .about-item-left-bg {
+                padding: 15px 0px;
+            }
+        }
+        
+        @media (max-width:480px) {
+            .about-item-left img {
+                width: 200px;
+                margin-top: 10px;
+            }
+            .about-item-left p {
+                text-align: center;
+                margin: 0px;
+            }
+            .about-item-left {
+                display: block;
+                margin-bottom: 20px;
+            }
+            .about-item-left h3 {
+                text-align: center;
+                margin: 0px;
+            }
+            .about-img-2 {
+                display: block;
+                margin: 0px auto;
+            }
+            .about-img-1 {
+                display: none;
+            }
+        }
