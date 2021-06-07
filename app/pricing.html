@@ -73,346 +73,583 @@
             this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
         }
     </script>
-
-    <footer>
-        <div class="footer-items">
-            <div class="container ">
-                <div class="row">
-                    <div class="col footer-list">
-                        <h3>Octupi</h3>
-                        <ul>
-                            <li>
-                                <a href="#">Terms</a></li>
-                            <li>
-                                <a href="#">Privacy</a></li>
-                            <li>
-                                <a href="#">Cookies</a></li>
-                            <li>
-                                <a href="#">Affiliate terms</a></li>
-                            <li>
-                                <a href="#">Download app</a></li>
-                            <li>
-                                <a href="#">Pricing</a></li>
-                            <li>
-                                <a href="#">Affiliate</a></li>
-                            <li>
-                                <a href="#">Press</a></li>
-                            <li>
-                                <a href="#">Octupi in your language</a></li>
-
-                        </ul>
+    <section class="text-center">
+        <h1>Get your team’s pricing</h1>
+        <p>Lowest industry price and the best value for money </p>
+        <div class="container">
+            <div class="row">
+                <section class="pricing-columns pricing-section">
+                    <label class="toggler toggler--is-active" id="filt-monthly">Monthly</label>
+                    <div class="toggle">
+                        <input type="checkbox" id="switcher" class="check">
+                        <b class="b switch"></b>
                     </div>
-                    <div class="col footer-list">
-                        <h3>Learn more</h3>
-                        <ul>
-                            <li>
-                                <a href="#">Employee time tracking</a></li>
-                            <li>
-                                <a href="#">Online employee time clock</a></li>
-                            <li>
-                                <a href="#">Best time tracking apps</a></li>
-                            <li>
-                                <a href="#">Octupi for Business</a></li>
-                            <li>
-                                <a href="#">Octupi for Freelancers</a></li>
-                            <li>
-                                <a href="#">FAQ</a></li>
-                            <li>
-                                <a href="#">Case Studies</a></li>
-                            <li>
-                                <a href="#">Webinars</a></li>
-                            <li>
-                                <a href="#">Blog</a></li>
+                    <label class="toggler" id="filt-annual">Annual</label>
+                    <div id="monthly" class="wrapper-full">
 
-                        </ul>
                     </div>
-                    <div class="col footer-list">
-                        <h3>Integration</h3>
-                        <ul>
-                            <li>
-                                <a href="#">Trello</a></li>
-                            <li>
-                                <a href="#">Basecamp</a></li>
-                            <li>
-                                <a href="#">Jira</a></li>
-                            <li>
-                                <a href="#">Asana</a></li>
-                            <li>
-                                <a href="#">Outlook Calendar</a></li>
-                            <li>
-                                <a href="#">Google Calendar</a></li>
+                    <script>
+                        var e = document.getElementById("filt-monthly"),
+                            d = document.getElementById("filt-annual"),
+                            t = document.getElementById("switcher"),
+                            m = document.getElementById("monthly"),
+                            y = document.getElementById("annual");
 
-                        </ul>
-                    </div>
-                    <div class="col footer-list">
-                        <h3>Features</h3>
-                        <ul>
-                            <li>
-                                <a href="#">Automatic time tracking</a></li>
-                            <li>
-                                <a href="#">URL & App tracking</a></li>
-                            <li>
-                                <a href="#">Screenshots</a></li>
-                            <li>
-                                <a href="#">Project time tracking</a></li>
-                            <li>
-                                <a href="#">Shift scheduling</a></li>
-                            <li>
-                                <a href="#">Offline time tracking</a></li>
-                            <li>
-                                <a href="#">Invoicing</a></li>
-                            <li>
-                                <a href="#">Absence Calendar</a></li>
-                            <li>
-                                <a href="#">Mobile app</a></li>
-                            <li>
-                                <a href="#">Feature requests</a></li>
+                        e.addEventListener("click", function() {
+                            t.checked = false;
+                            e.classList.add("toggler--is-active");
+                            d.classList.remove("toggler--is-active");
+                            m.classList.remove("hide");
+                            y.classList.add("hide");
+                        });
 
-                        </ul>
+                        d.addEventListener("click", function() {
+                            t.checked = true;
+                            d.classList.add("toggler--is-active");
+                            e.classList.remove("toggler--is-active");
+                            m.classList.add("hide");
+                            y.classList.remove("hide");
+                        });
+
+                        t.addEventListener("click", function() {
+                            d.classList.toggle("toggler--is-active");
+                            e.classList.toggle("toggler--is-active");
+                            m.classList.toggle("hide");
+                            y.classList.toggle("hide");
+                        })
+                    </script>
+                    <section class="range-section">
+                        <div>
+                            <span id="rangeValue">0</span>
+                            <Input class="range" type="range" name "" value="0" min="0" max="1000" onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)"></Input>
+                        </div>
+                        <script type="text/javascript">
+                            function rangeSlide(value) {
+                                document.getElementById('rangeValue').innerHTML = value;
+                            }
+                        </script>
+
+                    </section>
+            </div>
+            <div class="row">
+                <div class="col price-plan">
+                    <div class="text-center price-free">
+                        <h3>Lite</h3>
+                        <h1 class="heighlight bold">FREE</h1>
+                        <p class="plan-amount">1 User only</p>
+                        <div class="price-list">
+                            <p><i class="fa fa-check" aria-hidden="true"></i> Automatic time tracking</p>
+                            <p><i class="fa fa-check" aria-hidden="true"></i> App tracking</p>
+                            <p><i class="fa fa-check" aria-hidden="true"></i> Mobile app</p>
+                        </div>
+                        <button>Sign up</button>
                     </div>
-                    <div class="col footer-list">
-                        <h3>Contact</h3>
-                        <ul>
-                            <li>
-                                <a href="#">Schedule a demo</a></li>
-                            <li>
-                                <a href="#">Schedule a support call</a></li>
-                            <li>
-                                <a href="#">Send us an e-mail</a></li>
-                            <li>
-                                <a href="#">Request In-person training</a></li>
-                            <li>
-                                <a href="#">Open Chat</a></li>
-                        </ul>
+                    <div class=" text-center price-pro">
+                        <h3>Pro</h3>
+                        <h1 class=" bold">$95</h1>
+                        <p class="plan-amount">Monthly <br>Per user $5.94 <br><br>Everything is lighplus...</p>
+                        <div class="price-list">
+                            <p><i class="fa fa-check" aria-hidden="true"></i> Automatic time tracking</p>
+                            <p><i class="fa fa-check" aria-hidden="true"></i> URL and app tracking</p>
+                            <p><i class="fa fa-check" aria-hidden="true"></i> Productivity calculation</p>
+                            <p><i class="fa fa-check" aria-hidden="true"></i> Idle time tracking</p>
+                            <p><i class="fa fa-check" aria-hidden="true"></i> Project time tracking</p>
+                        </div>
+                        <button>Start free trial</button>
+                        <p class="heighlight plan-amount">No credit card required.</p>
+                    </div>
+                    <div class=" text-center text-white price-premium">
+                        <h2 class="bold">Most popular</h2>
+                        <h3>Premium</h3>
+                        <h1 class=" bold">$124</h1>
+                        <p class="plan-amount text-white">Monthly <br>Per user $7.75 <br><br>Everything is Pro,plus...</p>
+                        <div class="price-list ">
+                            <p><i class="fa fa-check" aria-hidden="true"></i> Automatic screenshots</p>
+                            <p><i class="fa fa-check" aria-hidden="true"></i> Absence calendar</p>
+                            <p><i class="fa fa-check" aria-hidden="true"></i> Shift Scheduling</p>
+                            <p><i class="fa fa-check" aria-hidden="true"></i> Invoicing</p>
+                            <p><i class="fa fa-check" aria-hidden="true"></i> Company integrations</p>
+                            <p><i class="fa fa-check" aria-hidden="true"></i> Offline time approval</p>
+                            <p><i class="fa fa-check" aria-hidden="true"></i> IP restrictions</p>
+                        </div>
+                        <button>Start free trial</button>
+                        <p class="text-white plan-amount ">No credit card required.</p>
+                    </div>
+                    <div class=" text-center price-enterprises">
+                        <h3>Enterprises</h3>
+                        <h1 class=" bold">$190</h1>
+                        <p class="plan-amount">Monthly <br>Per user $11.88 <br><br>Everything is Premium,plus...</p>
+                        <div class="price-list">
+                            <p><i class="fa fa-check" aria-hidden="true"></i> VIP support</p>
+                            <p><i class="fa fa-check" aria-hidden="true"></i> Personalized onboarding</p>
+                            <p><i class="fa fa-check" aria-hidden="true"></i> Unlimited projects</p>
+                            <p><i class="fa fa-check" aria-hidden="true"></i> Unlimited tasks</p>
+                            <p><i class="fa fa-check" aria-hidden="true"></i> Company integrations</p>
+                            <p><i class="fa fa-check" aria-hidden="true"></i> Unlimited data history</p>
+                            <p><i class="fa fa-check" aria-hidden="true"></i> Custom API functions</p>
+                        </div>
+                        <button>Start free trial</button>
+                        <p class="heighlight plan-amount">No credit card required.</p>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+            <div class="row comparison">
+                <a href="#">See full comparison</a>
+            </div>
+        </div>
+        <div class="container-fluid bg">
+            a
+        </div>
+        </section>
+
+        <section>
+            <div class="container-fluid octupi-client">
+                <div class="container">
+                    <div class="row section-5">
+                        <div class="col">
+                            <h2 class="bold">Octupi clients </h2>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col text-center">
+                            <a href="#"><img src="images/sixt.svg" alt="Sixt-Logo" width=150px></a>
+
+                        </div>
+                        <div class="col text-center">
+                            <a href="#"><img src="images/mapon.svg" alt="MApon-Logo" width="150px"></a>
+
+                        </div>
+                        <div class="col text-center">
+                            <a href="#"><img src="images/121.svg" alt="121-Logo" width="150px"></a>
+
+                        </div>
+                        <div class="col text-center">
+                            <a href="#"><img src="images/map.svg" alt="Map-Logo" width="150px"></a>
+
+                        </div>
+                        <div class="col text-center">
+                            <a href="#"><img src="images/truesix.svg" alt="Truesix-Logo" width="150px"></a>
+
+                        </div>
+
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col text-center">
+                            <a href="#"><img src="images/printful.svg" alt="Montway-Logo" width="150px"></a>
+
+                        </div>
+                        <div class="col text-center">
+                            <a href="#"><img src="images/kreiss.svg" alt="Montway-Logo" width="150px"></a>
+
+                        </div>
+                        <div class="col text-center">
+                            <a href="#"><img src="images/setupad.svg" alt="Montway-Logo" width="150px"></a>
+
+                        </div>
+                        <div class="col text-center">
+                            <a href="#"><img src="images/ferrerpoirot.svg" alt="Montway-Logo" width="150px"></a>
+
+                        </div>
+                        <div class="col text-center">
+                            <a href="#"><img src="images/montway.svg" alt="Montway-Logo" width="150px"></a>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container badges">
+                <div class="row text-center">
+                    <h2>Our badges</h2>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col text-center">
+                        <a href="#"><img src="images/softwaresuggest-award.svg" alt="softwaresuggest-award"></a>
+                    </div>
+                    <div class="col text-center">
+                        <a href="#"><img src="images/digitalcom-award.svg" alt="digitalcom-award"></a>
+                    </div>
+                    <div class="col text-center">
+                        <a href="#"><img src="images/g2.svg" alt="g2-award"></a>
+                    </div>
+                    <div class="col text-center">
+                        <a href="#"><img src="images/softwareworld.svg" alt="softwareworld-award"></a>
+                    </div>
+                    <div class="col text-center">
+                        <a href="#"><img src="images/30daymoneyback.svg" alt="30daymoneyback"></a>
                     </div>
                 </div>
             </div>
-        </div>
-
+        </section>
         <section>
-            <div class="container panel-accordion">
-                <div class="row">
-                    <div class="col">
-                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingSix">
-                                    <h4 class="panel-title">
-                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
-                                Octupi
-                            </a>
-                                    </h4>
-                                </div>
-                                <div id="collapseSix" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingSix">
-                                    <div class="panel-body">
-                                        <ul>
-                                            <li>
-                                                <a href="#">Terms</a></li>
-                                            <li>
-                                                <a href="#">Privacy</a></li>
-                                            <li>
-                                                <a href="#">Cookies</a></li>
-                                            <li>
-                                                <a href="#">Affiliate terms</a></li>
-                                            <li>
-                                                <a href="#">Download app</a></li>
-                                            <li>
-                                                <a href="#">Pricing</a></li>
-                                            <li>
-                                                <a href="#">Affiliate</a></li>
-                                            <li>
-                                                <a href="#">Press</a></li>
-                                            <li>
-                                                <a href="#">Octupi in your language</a></li>
-
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingSeven">
-                                    <h4 class="panel-title">
-                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
-                                Learn more
-                            </a>
-                                    </h4>
-                                </div>
-                                <div id="collapseSeven" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingSeven">
-                                    <div class="panel-body">
-                                        <ul>
-                                            <li>
-                                                <a href="#">Employee time tracking</a></li>
-                                            <li>
-                                                <a href="#">Online employee time clock</a></li>
-                                            <li>
-                                                <a href="#">Best time tracking apps</a></li>
-                                            <li>
-                                                <a href="#">Octupi for Business</a></li>
-                                            <li>
-                                                <a href="#">Octupi for Freelancers</a></li>
-                                            <li>
-                                                <a href="#">FAQ</a></li>
-                                            <li>
-                                                <a href="#">Case Studies</a></li>
-                                            <li>
-                                                <a href="#">Webinars</a></li>
-                                            <li>
-                                                <a href="#">Blog</a></li>
-
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingEight">
-                                    <h4 class="panel-title">
-                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
-                                Integration
-                            </a>
-                                    </h4>
-                                </div>
-                                <div id="collapseEight" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingEight">
-                                    <div class="panel-body">
-
-                                        <ul>
-                                            <li>
-                                                <a href="#">Trello</a></li>
-                                            <li>
-                                                <a href="#">Basecamp</a></li>
-                                            <li>
-                                                <a href="#">Jira</a></li>
-                                            <li>
-                                                <a href="#">Asana</a></li>
-                                            <li>
-                                                <a href="#">Outlook Calendar</a></li>
-                                            <li>
-                                                <a href="#">Google Calendar</a></li>
-
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingNine">
-                                    <h4 class="panel-title">
-                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
-                                Features
-                            </a>
-                                    </h4>
-                                </div>
-                                <div id="collapseNine" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingNine">
-                                    <div class="panel-body">
-
-                                        <ul>
-                                            <li>
-                                                <a href="#">Automatic time tracking</a></li>
-                                            <li>
-                                                <a href="#">URL & App tracking</a></li>
-                                            <li>
-                                                <a href="#">Screenshots</a></li>
-                                            <li>
-                                                <a href="#">Project time tracking</a></li>
-                                            <li>
-                                                <a href="#">Shift scheduling</a></li>
-                                            <li>
-                                                <a href="#">Offline time tracking</a></li>
-                                            <li>
-                                                <a href="#">Invoicing</a></li>
-                                            <li>
-                                                <a href="#">Absence Calendar</a></li>
-                                            <li>
-                                                <a href="#">Mobile app</a></li>
-                                            <li>
-                                                <a href="#">Feature requests</a></li>
-
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingTen">
-                                    <h4 class="panel-title">
-                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="true" aria-controls="collapseTen">
-                                Contact
-                            </a>
-                                    </h4>
-                                </div>
-                                <div id="collapseTen" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingTen">
-                                    <div class="panel-body">
-
-                                        <ul>
-                                            <li>
-                                                <a href="#">Schedule a demo</a></li>
-                                            <li>
-                                                <a href="#">Schedule a support call</a></li>
-                                            <li>
-                                                <a href="#">Send us an e-mail</a></li>
-                                            <li>
-                                                <a href="#">Request In-person training</a></li>
-                                            <li>
-                                                <a href="#">Open Chat</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-
+            <div class="container-fluid capterra">
+                <div class="container">
+                    <div class="row">
+                        <div class="col text-center">
+                            <img src="images/capterra1.svg" alt="capterra">
+                        </div>
+                        <div class="col capterra-body  text-white">
+                            <h2 class="bold">Octupi</h2>
+                            <p class="text-white"><i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i> 4.4 / 5 <span style="background-color: rgba(0,0,0,.2);color: white; padding: 5px 10px; border-radius: 5px;">139 reviews</span>
+                            </p>
+                            <p class="text-white">
+                                Reviews and ratings from real users on Capterra software rating platform.
+                            </p>
 
                         </div>
                     </div>
                 </div>
             </div>
-
         </section>
+        <footer>
+            <div class="footer-items">
+                <div class="container ">
+                    <div class="row">
+                        <div class="col footer-list">
+                            <h3>Octupi</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">Terms</a></li>
+                                <li>
+                                    <a href="#">Privacy</a></li>
+                                <li>
+                                    <a href="#">Cookies</a></li>
+                                <li>
+                                    <a href="#">Affiliate terms</a></li>
+                                <li>
+                                    <a href="#">Download app</a></li>
+                                <li>
+                                    <a href="#">Pricing</a></li>
+                                <li>
+                                    <a href="#">Affiliate</a></li>
+                                <li>
+                                    <a href="#">Press</a></li>
+                                <li>
+                                    <a href="#">Octupi in your language</a></li>
 
-        <section>
-            <div class="container">
-                <div class="row socail-icons">
-                    <div class="col-md-4 text-center">
-                        <img src="images/logo.png" alt="#" width="200px">
-                    </div>
-                    <div class="col-md-1">
+                            </ul>
+                        </div>
+                        <div class="col footer-list">
+                            <h3>Learn more</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">Employee time tracking</a></li>
+                                <li>
+                                    <a href="#">Online employee time clock</a></li>
+                                <li>
+                                    <a href="#">Best time tracking apps</a></li>
+                                <li>
+                                    <a href="#">Octupi for Business</a></li>
+                                <li>
+                                    <a href="#">Octupi for Freelancers</a></li>
+                                <li>
+                                    <a href="#">FAQ</a></li>
+                                <li>
+                                    <a href="#">Case Studies</a></li>
+                                <li>
+                                    <a href="#">Webinars</a></li>
+                                <li>
+                                    <a href="#">Blog</a></li>
 
-                    </div>
-                    <div class="col   text-center align-items-center">
-                        <ul>
-                            <li>
-                                <a href="#"></a><i class="fa fa-facebook-square" aria-hidden="true"></i>
-                                </i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-                            </li>
-                            <li>
-                                <img src="images/google-play.png" alt="#" width="150px">
-                            </li>
-                            <li>
-                                <img src="images/app-store.png" alt="#" width="150px">
+                            </ul>
+                        </div>
+                        <div class="col footer-list">
+                            <h3>Integration</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">Trello</a></li>
+                                <li>
+                                    <a href="#">Basecamp</a></li>
+                                <li>
+                                    <a href="#">Jira</a></li>
+                                <li>
+                                    <a href="#">Asana</a></li>
+                                <li>
+                                    <a href="#">Outlook Calendar</a></li>
+                                <li>
+                                    <a href="#">Google Calendar</a></li>
 
-                            </li>
-                        </ul>
+                            </ul>
+                        </div>
+                        <div class="col footer-list">
+                            <h3>Features</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">Automatic time tracking</a></li>
+                                <li>
+                                    <a href="#">URL & App tracking</a></li>
+                                <li>
+                                    <a href="#">Screenshots</a></li>
+                                <li>
+                                    <a href="#">Project time tracking</a></li>
+                                <li>
+                                    <a href="#">Shift scheduling</a></li>
+                                <li>
+                                    <a href="#">Offline time tracking</a></li>
+                                <li>
+                                    <a href="#">Invoicing</a></li>
+                                <li>
+                                    <a href="#">Absence Calendar</a></li>
+                                <li>
+                                    <a href="#">Mobile app</a></li>
+                                <li>
+                                    <a href="#">Feature requests</a></li>
 
-
+                            </ul>
+                        </div>
+                        <div class="col footer-list">
+                            <h3>Contact</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">Schedule a demo</a></li>
+                                <li>
+                                    <a href="#">Schedule a support call</a></li>
+                                <li>
+                                    <a href="#">Send us an e-mail</a></li>
+                                <li>
+                                    <a href="#">Request In-person training</a></li>
+                                <li>
+                                    <a href="#">Open Chat</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-        </section>
-        <!--FOOTER END-->
-    </footer>
+            </div>
+
+            <section>
+                <div class="container panel-accordion">
+                    <div class="row">
+                        <div class="col">
+                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingSix">
+                                        <h4 class="panel-title">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                                Octupi
+                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseSix" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingSix">
+                                        <div class="panel-body">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Terms</a></li>
+                                                <li>
+                                                    <a href="#">Privacy</a></li>
+                                                <li>
+                                                    <a href="#">Cookies</a></li>
+                                                <li>
+                                                    <a href="#">Affiliate terms</a></li>
+                                                <li>
+                                                    <a href="#">Download app</a></li>
+                                                <li>
+                                                    <a href="#">Pricing</a></li>
+                                                <li>
+                                                    <a href="#">Affiliate</a></li>
+                                                <li>
+                                                    <a href="#">Press</a></li>
+                                                <li>
+                                                    <a href="#">Octupi in your language</a></li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingSeven">
+                                        <h4 class="panel-title">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                                Learn more
+                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseSeven" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingSeven">
+                                        <div class="panel-body">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Employee time tracking</a></li>
+                                                <li>
+                                                    <a href="#">Online employee time clock</a></li>
+                                                <li>
+                                                    <a href="#">Best time tracking apps</a></li>
+                                                <li>
+                                                    <a href="#">Octupi for Business</a></li>
+                                                <li>
+                                                    <a href="#">Octupi for Freelancers</a></li>
+                                                <li>
+                                                    <a href="#">FAQ</a></li>
+                                                <li>
+                                                    <a href="#">Case Studies</a></li>
+                                                <li>
+                                                    <a href="#">Webinars</a></li>
+                                                <li>
+                                                    <a href="#">Blog</a></li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingEight">
+                                        <h4 class="panel-title">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+                                Integration
+                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseEight" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingEight">
+                                        <div class="panel-body">
+
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Trello</a></li>
+                                                <li>
+                                                    <a href="#">Basecamp</a></li>
+                                                <li>
+                                                    <a href="#">Jira</a></li>
+                                                <li>
+                                                    <a href="#">Asana</a></li>
+                                                <li>
+                                                    <a href="#">Outlook Calendar</a></li>
+                                                <li>
+                                                    <a href="#">Google Calendar</a></li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingNine">
+                                        <h4 class="panel-title">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
+                                Features
+                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseNine" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingNine">
+                                        <div class="panel-body">
+
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Automatic time tracking</a></li>
+                                                <li>
+                                                    <a href="#">URL & App tracking</a></li>
+                                                <li>
+                                                    <a href="#">Screenshots</a></li>
+                                                <li>
+                                                    <a href="#">Project time tracking</a></li>
+                                                <li>
+                                                    <a href="#">Shift scheduling</a></li>
+                                                <li>
+                                                    <a href="#">Offline time tracking</a></li>
+                                                <li>
+                                                    <a href="#">Invoicing</a></li>
+                                                <li>
+                                                    <a href="#">Absence Calendar</a></li>
+                                                <li>
+                                                    <a href="#">Mobile app</a></li>
+                                                <li>
+                                                    <a href="#">Feature requests</a></li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingTen">
+                                        <h4 class="panel-title">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="true" aria-controls="collapseTen">
+                                Contact
+                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseTen" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingTen">
+                                        <div class="panel-body">
+
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Schedule a demo</a></li>
+                                                <li>
+                                                    <a href="#">Schedule a support call</a></li>
+                                                <li>
+                                                    <a href="#">Send us an e-mail</a></li>
+                                                <li>
+                                                    <a href="#">Request In-person training</a></li>
+                                                <li>
+                                                    <a href="#">Open Chat</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section>
+                <div class="container">
+                    <div class="row socail-icons">
+                        <div class="col-md-4 text-center">
+                            <img src="images/logo.png" alt="#" width="200px">
+                        </div>
+                        <div class="col-md-1">
+
+                        </div>
+                        <div class="col   text-center align-items-center">
+                            <ul>
+                                <li>
+                                    <a href="#"></a><i class="fa fa-facebook-square" aria-hidden="true"></i>
+                                    </i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                                </li>
+                                <li>
+                                    <img src="images/google-play.png" alt="#" width="150px">
+                                </li>
+                                <li>
+                                    <img src="images/app-store.png" alt="#" width="150px">
+
+                                </li>
+                            </ul>
+
+
+                        </div>
+                    </div>
+            </section>
+            <!--FOOTER END-->
+        </footer>
 </body>
 
 </html>
