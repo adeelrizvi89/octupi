@@ -1428,6 +1428,9 @@
             .bg {
                 display: none;
             }
+            .comparison a {
+                margin-bottom: 50px;
+            }
         }
         
         .octupi-client {
@@ -1443,6 +1446,7 @@
             background-color: #007dbf;
             padding: 50px 0px;
             display: inline-flex;
+            margin-bottom: 50px;
         }
         
         .capterra-review img {
