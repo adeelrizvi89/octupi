@@ -1439,17 +1439,17 @@
             padding: 50px 0px;
         }
         
-        .capterra {
+        .capterra-review {
             background-color: #007dbf;
             padding: 50px 0px;
             display: inline-flex;
         }
         
-        .capterra img {
+        .capterra-review img {
             margin-top: 50px;
         }
         
-        .capterra-body {
+        .capterra-review-body {
             margin-left: 50px;
             color: white;
         }
@@ -1460,16 +1460,16 @@
         }
         
         @media (max-width:920px) {
-            .capterra {
+            .capterra-review {
                 background-color: #007dbf;
                 padding: 10px 0px;
                 display: block;
             }
-            .capterra img {
+            .capterra-review img {
                 margin-top: 0px;
                 width: 200px;
             }
-            .capterra-body {
+            .capterra-review-body {
                 margin-left: 0px;
                 color: white;
             }
