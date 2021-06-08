@@ -87,14 +87,16 @@
             width: 100%;
             z-index: 2;
             padding: 15px 0;
-            background-color: #314f6b;
+            background-image: linear-gradient( 45deg, #314f6b, #1a3144);
             transition: all 0.3s ease;
             height: 80px;
+            align-items: baseline;
+            border-radius: 0px;
         }
         
         .navbar.sticky {
-            background: #314f6b;
-            padding: 10px 0;
+            background-image: linear-gradient( 45deg, #314f6b, #1a3144);
+            padding: 15px 0;
             box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
             margin-bottom: 100px;
         }
@@ -198,9 +200,9 @@
                 left: -100%;
                 top: 0px;
                 display: block;
-                padding: 30px 0;
+                padding: 10px 0;
                 text-align: center;
-                background: #314f6b;
+                background-image: linear-gradient( 45deg, #314f6b, #1a3144);
                 transition: all 0.3s ease;
             }
             .navbar.show .menu-list {
@@ -264,10 +266,6 @@
         }
         /**********SECTOIN-1 END**************/
         /**********SECTOIN-2 START**************/
-        
-        .section-2 {
-            background-color: #314f6b;
-        }
         
         .test {
             padding: 0px !important;
@@ -572,7 +570,6 @@
         /**********SECTOION-5 START**************/
         
         .section-5 {
-            background-color: #314f6b;
             padding: 20px 0;
         }
         
@@ -631,7 +628,7 @@
         
         .info-box {
             background-color: #f2f4ff;
-            box-shadow: 3px 3px 20px #333c43;
+            box-shadow: 3px 3px 20px #e6e9fc;
             width: 100%;
             height: auto;
             padding: 20px 0px;
@@ -643,7 +640,7 @@
             text-align: center;
             background-color: #fff;
             padding: 5px 10px;
-            box-shadow: 1px 2px 5px #333c43;
+            box-shadow: 1px 2px 15px rgb(231, 230, 230);
             width: 350px;
             height: 550px;
         }
@@ -1481,137 +1478,143 @@
                 font-size: 25px;
             }
         }
-.login-form{
+        
+        .login-form {
             margin-top: 50px;
         }
-        .login-form img{
+        
+        .login-form img {
             width: 100px;
         }
-        .login-area{
+        
+        .login-area {
             width: 400px;
             height: auto;
             margin: 10px auto;
             padding: 20px;
             border: 1px solid rgb(173, 173, 173);
-            
         }
-        .login-area input{
+        
+        .login-area input {
             width: 100%;
             margin: 10px auto;
             border-radius: 3px;
             outline: none;
             border: 1px solid rgb(173, 173, 173);
             background-color: #f2f4ff;
-
         }
-        .login-area button{
+        
+        .login-area button {
             margin: 10px auto;
             width: 100%;
             font-weight: bold;
             font-size: 20px;
         }
-        .login-area2{
+        
+        .login-area2 {
             margin-bottom: 50px;
             width: 400px;
             height: auto;
             padding: 20px;
             border: 1px solid rgb(173, 173, 173);
         }
-        .login-area2 ul li{
+        
+        .login-area2 ul li {
             display: inline-flex;
             padding: 0px;
             cursor: pointer;
         }
-        @media (max-width:920px){
-            .login-form{
+        
+        @media (max-width:920px) {
+            .login-form {
                 margin-top: 20px;
             }
-            .login-form h2{
+            .login-form h2 {
                 font-size: 25px;
             }
-            .login-form img{
+            .login-form img {
                 width: 100px;
             }
-            .login-area{
+            .login-area {
                 width: 400px;
                 height: auto;
                 margin: 10px auto;
                 padding: 10px;
                 border: 1px solid rgb(173, 173, 173);
-                
             }
-            .login-area input{
+            .login-area input {
                 width: 100%;
                 margin: 10px auto;
                 border-radius: 3px;
                 outline: none;
                 border: 1px solid rgb(173, 173, 173);
                 background-color: #f2f4ff;
-    
             }
-            .login-area button{
+            .login-area button {
                 margin: 10px auto;
                 width: 100%;
                 font-weight: bold;
                 font-size: 20px;
             }
-            .login-area2{
+            .login-area2 {
                 margin-bottom: 20px;
                 width: 400px;
                 height: auto;
                 padding: 10px;
                 border: 1px solid rgb(173, 173, 173);
             }
-            .login-area2 ul li{
+            .login-area2 ul li {
                 display: inline-flex;
                 padding: 0px;
                 cursor: pointer;
             }
         }
-
-        @media (max-width:480px){
-            .login-form{
+        
+        @media (max-width:480px) {
+            .login-form {
                 margin-top: 20px;
             }
-            .login-form h2{
+            .login-form h2 {
                 font-size: 25px;
             }
-            .login-form img{
+            .login-form img {
                 width: 100px;
             }
-            .login-area{
+            .login-area {
                 width: 100%;
                 height: auto;
                 margin: 10px auto;
                 padding: 10px;
                 border: 1px solid rgb(173, 173, 173);
-                
             }
-            .login-area input{
+            .login-area input {
                 width: 100%;
                 margin: 10px auto;
                 border-radius: 3px;
                 outline: none;
                 border: 1px solid rgb(173, 173, 173);
                 background-color: #f2f4ff;
-    
             }
-            .login-area button{
+            .login-area button {
                 margin: 10px auto;
                 width: 100%;
                 font-weight: bold;
                 font-size: 20px;
             }
-            .login-area2{
+            .login-area2 {
                 margin-bottom: 20px;
                 width: auto;
                 height: auto;
                 padding: 10px;
                 border: 1px solid rgb(173, 173, 173);
             }
-            .login-area2 ul li{
+            .login-area2 ul li {
                 display: inline-flex;
                 padding: 0px;
                 cursor: pointer;
             }
+        }
+        
+        .gredient {
+            background-image: linear-gradient( 45deg, #314f6b, #1a3144);
         }
