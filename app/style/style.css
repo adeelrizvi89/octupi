@@ -329,8 +329,9 @@
             transition: all 0.3s ease 0s;
         }
         
-        .panel-default {
+        .panel-default .panel-heading {
             background-color: #f2f4ff;
+            border: none;
         }
         
         .tab-list {
