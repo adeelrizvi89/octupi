@@ -13,26 +13,26 @@
         }
         
         button {
-            background-color: #f85018;
+            background-color: #ff7445;
             color: #fff;
             border-radius: 5px;
             border: none;
             outline: none;
-            padding: 5px 10px;
-            width: 200px;
+            padding: 5px 20px;
+            width: max-content;
             height: 50px;
             font-size: 16px;
             margin: 0 10px;
         }
         
         input {
-            width: 200px;
+            width: 300px;
             height: 50px;
             font-size: 16px;
             padding: 5px 10px;
             border-radius: 5px;
             outline: none;
-            border: black 1px solid;
+            border: #d2d8fc 1px solid;
         }
         
         p {
@@ -65,8 +65,12 @@
         }
         
         .heighlight {
-            color: #f85018;
+            color: #ff7445;
             text-decoration: none;
+        }
+        
+        .heighlight:hover {
+            color: #ff7445;
         }
         
         .size {
@@ -119,19 +123,19 @@
         }
         
         .login {
-            border: #f85018 1px solid;
+            border: #ff7445 1px solid;
             padding: 10px 20px;
             border-radius: 5px;
         }
         
         .sign-up {
-            background-color: #f85018;
+            background-color: #ff7445;
             padding: 10px 20px;
             border-radius: 5px;
         }
         
         .menu-list li a:hover {
-            color: #f85018;
+            color: #ff7445;
             transition: 0.5s;
         }
         
@@ -321,7 +325,7 @@
             padding: 8px 25px 10px;
             margin: 0 10px 0 0;
             border: none;
-            border-top: 3px solid #f85018;
+            border-top: 3px solid #ff7445;
             border-radius: 0;
             overflow: hidden;
             position: relative;
@@ -349,13 +353,13 @@
             color: #fff;
             background: transparent;
             border: none;
-            border-top: 3px solid #f85018;
+            border-top: 3px solid #ff7445;
         }
         
         .tab .nav-tabs li a:before,
         .tab .nav-tabs li a:after {
             content: "";
-            background-color: #f85018;
+            background-color: #ff7445;
             width: 50%;
             height: 100%;
             opacity: 0;
@@ -388,7 +392,7 @@
             letter-spacing: 1px;
             line-height: 25px;
             padding: 20px;
-            border-bottom: 4px solid #f85018;
+            border-bottom: 4px solid #ff7445;
             position: relative;
         }
         
@@ -403,7 +407,7 @@
         }
         
         .panel-heading ul {
-            background-color: #f85018;
+            background-color: #ff7445;
             color: #fff;
             border-radius: 10px;
         }
@@ -481,7 +485,7 @@
             content: "";
             width: 40px;
             height: 100%;
-            background: #f85018;
+            background: #ff7445;
             position: absolute;
             top: 0;
             left: 0;
@@ -618,7 +622,7 @@
         /**********SECTOIN-6 START**************/
         
         .section-6 h2 {
-            margin-top: 20px;
+            margin-top: 50px;
             text-align: center;
         }
         
@@ -629,7 +633,6 @@
         
         .info-box {
             background-color: #f2f4ff;
-            box-shadow: 3px 3px 20px #e6e9fc;
             width: 100%;
             height: auto;
             padding: 20px 0px;
@@ -641,14 +644,23 @@
             text-align: center;
             background-color: #fff;
             padding: 5px 10px;
-            box-shadow: 1px 2px 15px rgb(231, 230, 230);
+            box-shadow: -1px -3px 13px 3px #e6eaff;
             width: 350px;
-            height: 550px;
+            height: 500px;
+            border-radius: 10px;
+        }
+        
+        .box:hover {
+            -ms-transform: scale(1.1);
+            /* IE 9 */
+            -webkit-transform: scale(1.1);
+            /* Safari 3-8 */
+            transform: scale(1.1);
+            transition: 0.5s;
         }
         
         .box a {
-            margin-top: 20px;
-            font-size: 20px;
+            font-size: 16px;
             font-weight: bold;
         }
         
@@ -668,10 +680,6 @@
         }
         /**********SECTOIN-6 END**************/
         /**********SECTOIN-7 START**************/
-        
-        .section-7 {
-            margin-top: 50px;
-        }
         
         .section-7 p {
             margin: 20px 0;
@@ -1272,7 +1280,7 @@
             width: 15px;
             height: 15px;
             border-radius: 50%;
-            background: #f85018;
+            background: #ff7445;
             cursor: pointer;
             box-shadow: -407px 0 0 400px #314f6b;
         }
@@ -1310,7 +1318,7 @@
         
         .price-premium h2 {
             font-size: 25px;
-            background-color: #f85018;
+            background-color: #ff7445;
             color: #fff;
             margin: 0px -10px;
             padding: 10px;
@@ -1342,7 +1350,7 @@
         }
         
         .price-list .fa-check {
-            color: #f85018;
+            color: #ff7445;
         }
         
         @media (max-width:920px) {
@@ -1375,7 +1383,7 @@
             }
             .price-premium h2 {
                 font-size: 25px;
-                background-color: #f85018;
+                background-color: #ff7445;
                 color: #fff;
                 margin: 0px -10px;
                 padding: 10px;
@@ -1401,7 +1409,7 @@
                 line-height: 20px;
             }
             .price-list .fa-check {
-                color: #f85018;
+                color: #ff7445;
             }
             .price-free button {
                 margin-bottom: 20px;
