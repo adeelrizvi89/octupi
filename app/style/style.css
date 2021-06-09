@@ -33,6 +33,7 @@
             border-radius: 5px;
             outline: none;
             border: #d2d8fc 1px solid;
+            font-size: 14px;
         }
         
         p {
@@ -733,9 +734,18 @@
             font-weight: bolder;
         }
         
+        .section-8 h3 {
+            font-size: 50px;
+        }
+        
         .section-8 p {
             color: #fff;
             text-align: center;
+        }
+        
+        .counter {
+            font-size: 70px;
+            color: white;
         }
         /**********SECTOIN-8 END**************/
         /**********SECTOIN-9 START**************/
