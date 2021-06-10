@@ -108,6 +108,7 @@
         
         .navbar .menu-list {
             display: inline-flex;
+            margin-left: 250px;
         }
         
         .menu-list li {
@@ -179,6 +180,9 @@
             .content {
                 padding: 0 40px;
             }
+            .navbar .menu-list {
+                margin-left: 0px;
+            }
         }
         
         @media (max-width: 900px) {
@@ -193,6 +197,10 @@
             }
             .icon {
                 display: block;
+                margin-right: -300px;
+            }
+            .navbar .logo {
+                margin-left: -300px;
             }
             .icon.hide {
                 display: none;
@@ -222,6 +230,15 @@
                 transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
             }
             .navbar.show .menu-list li a {
+                margin-left: 0px;
+            }
+        }
+        
+        @media (max-width:680px) {
+            .icon {
+                margin-right: 0px;
+            }
+            .navbar .logo {
                 margin-left: 0px;
             }
         }
@@ -272,18 +289,8 @@
         /**********SECTOIN-1 END**************/
         /**********SECTOIN-2 START**************/
         
-        .test {
-            padding: 0px !important;
-            box-sizing: border-box;
-        }
-        
-        .section-2 h3 {
-            margin-left: 15px;
-        }
-        
-        .fa-check {
-            padding-right: 10px;
-            color: white;
+        .checklist {
+            width: max-content;
         }
         
         .checklist p {
@@ -291,8 +298,16 @@
             font-size: 15px;
         }
         
-        @media (max-width:920) {
-            .list-col {
+        .fa-check {
+            padding-right: 10px;
+            color: white;
+        }
+        
+        @media (max-width:920px) {
+            .section-2 {
+                display: block;
+            }
+            .checklist {
                 width: 100%;
             }
         }

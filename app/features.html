@@ -20,6 +20,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
     <link rel="stylesheet" href="style/style.css">
@@ -101,17 +102,17 @@
     <section>
         <div class="container">
             <div class="row feature-section-2">
-                <div class="col text-center">
+                <div class="col text-center" data-aos="flip-left">
                     <img src="images/boost.png" alt="#">
                     <h3>Boost productivity by 30%</h3>
                     <p>Identify and eliminate inefficient habits.</p>
                 </div>
-                <div class="col text-center">
+                <div class="col text-center" data-aos="flip-left">
                     <img src="images/productivity.png" alt="#">
                     <h3>Stay organized and in control</h3>
                     <p>Manage your team and track projects in one place. </p>
                 </div>
-                <div class="col text-center">
+                <div class="col text-center" data-aos="flip-left">
                     <img src="images/time-tracking.png" alt="">
                     <h3>Save time and manual work</h3>
                     <p>No manual timesheets that take time to fill out and are never 100% reliable. </p>
@@ -277,7 +278,7 @@
         </div>
     </section>
     <!--SECTION-3 END-->
-    <div class="container-fluid feature-item-left-bg">
+    <div class="container-fluid feature-item-left-bg" data-aos="fade-in">
         <div class="container ">
             <div class="row feature-item-left">
                 <div class="col">
@@ -957,7 +958,10 @@
         <!--FOOTER END-->
     </footer>
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
