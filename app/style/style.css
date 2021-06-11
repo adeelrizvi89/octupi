@@ -248,15 +248,12 @@
                         }
                     }
                     
-                    @media (max-width:360px) {
-                        .icon {
-                            margin-right: 0px;
+                    @media (max-width:340px) {
+                        .menu-btn {
+                            margin-left: 40px;
                         }
                         .navbar .logo {
-                            margin-left: -10px;
-                        }
-                        .navbar .logo img {
-                            width: 100px;
+                            margin-top: -10px;
                         }
                     }
                     /* NAVIGATION BAR END */
